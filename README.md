@@ -4,8 +4,8 @@ Welcome to ROBOT HOUSE.
 
 ## Projects
 
-### 🍔 Food Truck
+### Food Truck
 https://robothose.github.io/robothouse/Food_Truck.html
 
-### 📊 Feasibility Study
+### Feasibility Study
 https://robothose.github.io/robothouse/robot-house-feasibility.html
