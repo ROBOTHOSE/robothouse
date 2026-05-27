@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root" data-theme="holo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOT HOUSE — دراسة الجدوى الشاملة | Feasibility Study</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ===== THEME SYSTEM ===== */
+:root{--accent:#00d4ff;--gold:#ffd700;--success:#00e676;--warning:#ffab40;--danger:#ff4757;}
+[data-theme="holo"]{--bg:#050d1a;--bg2:#0a1628;--card:#0d1f3c;--card2:#112240;--text:#e0e8f0;--muted:#6a7f96;--border:#1e3a5f;--nav-bg:rgba(13,31,60,0.96);--hero-from:#050d1a;--hero-to:#0d2040;--stat-bg:#0d1f3c;--footer-bg:#0d1f3c;--h3:#00d4ff;--h4:#ffd700;--strong:#fff;--divider:#1e3a5f;--hl-bg:rgba(0,212,255,0.07);--hl-border:rgba(0,212,255,0.3);--hl-gold-bg:rgba(255,215,0,0.07);--hl-gold-border:rgba(255,215,0,0.3);--hl-red-bg:rgba(255,107,53,0.07);--hl-red-border:rgba(255,107,53,0.3);--swot-s-bg:rgba(0,230,118,0.07);--swot-s-b:rgba(0,230,118,0.3);--swot-w-bg:rgba(255,107,53,0.07);--swot-w-b:rgba(255,107,53,0.3);--swot-o-bg:rgba(0,212,255,0.07);--swot-o-b:rgba(0,212,255,0.3);--swot-t-bg:rgba(255,215,0,0.07);--swot-t-b:rgba(255,215,0,0.3);--num-bg:linear-gradient(135deg,#00d4ff,#0066aa);--num-color:#000;--toc-link:#c0d4e8;--toc-active:#00d4ff;--canvas-op:0.13;--card-shadow:0 8px 32px rgba(0,212,255,0.12);--hs-bg:rgba(0,212,255,0.07);--hs-border:rgba(0,212,255,0.25);--hs-num:#00d4ff;--tbl-head:linear-gradient(90deg,#112240,#0d1f3c);--tbl-hover:rgba(0,212,255,0.05);--fp-bg:rgba(255,215,0,0.07);--fp-border:rgba(255,215,0,0.3);--fp-color:#ffd700;--badge-blue-bg:rgba(0,212,255,0.15);--badge-blue-c:#00d4ff;--badge-blue-b:rgba(0,212,255,0.3);--badge-or-bg:rgba(255,107,53,0.15);--badge-or-c:#ff6b35;--badge-or-b:rgba(255,107,53,0.3);--badge-gr-bg:rgba(0,230,118,0.15);--badge-gr-c:#00e676;--badge-gr-b:rgba(0,230,118,0.3);--badge-gd-bg:rgba(255,215,0,0.15);--badge-gd-c:#ffd700;--badge-gd-b:rgba(255,215,0,0.3);--bullet:#00d4ff;--tl-line:linear-gradient(to bottom,#00d4ff,transparent);--tl-dot:#00d4ff;}
+[data-theme="white"]{--bg:#fff;--bg2:#f8f9fa;--card:#fff;--card2:#f5f7fa;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--nav-bg:rgba(255,255,255,0.97);--hero-from:#f0f4ff;--hero-to:#e8f0fe;--stat-bg:#f8f9fa;--footer-bg:#f8f9fa;--h3:#1d4ed8;--h4:#b45309;--strong:#111827;--divider:#e5e7eb;--hl-bg:rgba(29,78,216,0.05);--hl-border:rgba(29,78,216,0.25);--hl-gold-bg:rgba(180,83,9,0.05);--hl-gold-border:rgba(180,83,9,0.25);--hl-red-bg:rgba(220,38,38,0.05);--hl-red-border:rgba(220,38,38,0.25);--swot-s-bg:rgba(5,150,105,0.05);--swot-s-b:rgba(5,150,105,0.3);--swot-w-bg:rgba(220,38,38,0.05);--swot-w-b:rgba(220,38,38,0.3);--swot-o-bg:rgba(29,78,216,0.05);--swot-o-b:rgba(29,78,216,0.3);--swot-t-bg:rgba(180,83,9,0.05);--swot-t-b:rgba(180,83,9,0.3);--num-bg:linear-gradient(135deg,#1d4ed8,#1e40af);--num-color:#fff;--toc-link:#374151;--toc-active:#1d4ed8;--canvas-op:0;--card-shadow:0 8px 32px rgba(29,78,216,0.1);--hs-bg:rgba(29,78,216,0.06);--hs-border:rgba(29,78,216,0.2);--hs-num:#1d4ed8;--tbl-head:linear-gradient(90deg,#f0f4ff,#e8f0fe);--tbl-hover:rgba(29,78,216,0.04);--fp-bg:rgba(180,83,9,0.06);--fp-border:rgba(180,83,9,0.25);--fp-color:#92400e;--badge-blue-bg:rgba(29,78,216,0.1);--badge-blue-c:#1d4ed8;--badge-blue-b:rgba(29,78,216,0.3);--badge-or-bg:rgba(234,88,12,0.1);--badge-or-c:#ea580c;--badge-or-b:rgba(234,88,12,0.3);--badge-gr-bg:rgba(5,150,105,0.1);--badge-gr-c:#059669;--badge-gr-b:rgba(5,150,105,0.3);--badge-gd-bg:rgba(180,83,9,0.1);--badge-gd-c:#b45309;--badge-gd-b:rgba(180,83,9,0.3);--bullet:#1d4ed8;--tl-line:linear-gradient(to bottom,#1d4ed8,transparent);--tl-dot:#1d4ed8;--accent:#1d4ed8;--gold:#b45309;--success:#059669;--warning:#d97706;}
+[data-theme="dark"]{--bg:#0f0f0f;--bg2:#1a1a1a;--card:#1a1a1a;--card2:#222;--text:#f5f5f5;--muted:#737373;--border:#2a2a2a;--nav-bg:rgba(15,15,15,0.97);--hero-from:#0f0f0f;--hero-to:#1a1a1a;--stat-bg:#1a1a1a;--footer-bg:#1a1a1a;--h3:#e5e5e5;--h4:#d4d4d4;--strong:#fff;--divider:#2a2a2a;--hl-bg:rgba(255,255,255,0.04);--hl-border:rgba(255,255,255,0.12);--hl-gold-bg:rgba(255,255,255,0.04);--hl-gold-border:rgba(255,255,255,0.12);--hl-red-bg:rgba(255,255,255,0.04);--hl-red-border:rgba(255,255,255,0.12);--swot-s-bg:rgba(255,255,255,0.04);--swot-s-b:rgba(255,255,255,0.15);--swot-w-bg:rgba(255,255,255,0.04);--swot-w-b:rgba(255,255,255,0.15);--swot-o-bg:rgba(255,255,255,0.04);--swot-o-b:rgba(255,255,255,0.15);--swot-t-bg:rgba(255,255,255,0.04);--swot-t-b:rgba(255,255,255,0.15);--num-bg:linear-gradient(135deg,#404040,#2a2a2a);--num-color:#fff;--toc-link:#d4d4d4;--toc-active:#e5e5e5;--canvas-op:0;--card-shadow:0 8px 32px rgba(0,0,0,0.4);--hs-bg:rgba(255,255,255,0.05);--hs-border:rgba(255,255,255,0.12);--hs-num:#e5e5e5;--tbl-head:linear-gradient(90deg,#222,#1a1a1a);--tbl-hover:rgba(255,255,255,0.04);--fp-bg:rgba(255,255,255,0.04);--fp-border:rgba(255,255,255,0.12);--fp-color:#d4d4d4;--badge-blue-bg:rgba(255,255,255,0.08);--badge-blue-c:#e5e5e5;--badge-blue-b:rgba(255,255,255,0.15);--badge-or-bg:rgba(255,255,255,0.08);--badge-or-c:#e5e5e5;--badge-or-b:rgba(255,255,255,0.15);--badge-gr-bg:rgba(255,255,255,0.08);--badge-gr-c:#e5e5e5;--badge-gr-b:rgba(255,255,255,0.15);--badge-gd-bg:rgba(255,255,255,0.08);--badge-gd-c:#e5e5e5;--badge-gd-b:rgba(255,255,255,0.15);--bullet:#737373;--tl-line:linear-gradient(to bottom,#737373,transparent);--tl-dot:#737373;--accent:#a3a3a3;--gold:#d4d4d4;--success:#a3a3a3;--warning:#d4d4d4;}
+[data-theme="colorful"]{--bg:#0d0221;--bg2:#1a0533;--card:#1a0533;--card2:#2d0a4e;--text:#f0e6ff;--muted:#9b7ec8;--border:#4a1a7a;--nav-bg:rgba(13,2,33,0.97);--hero-from:#0d0221;--hero-to:#2d0a4e;--stat-bg:#1a0533;--footer-bg:#1a0533;--h3:#c084fc;--h4:#fb923c;--strong:#fff;--divider:#4a1a7a;--hl-bg:rgba(192,132,252,0.08);--hl-border:rgba(192,132,252,0.35);--hl-gold-bg:rgba(251,146,60,0.08);--hl-gold-border:rgba(251,146,60,0.35);--hl-red-bg:rgba(248,113,113,0.08);--hl-red-border:rgba(248,113,113,0.35);--swot-s-bg:rgba(52,211,153,0.08);--swot-s-b:rgba(52,211,153,0.35);--swot-w-bg:rgba(248,113,113,0.08);--swot-w-b:rgba(248,113,113,0.35);--swot-o-bg:rgba(192,132,252,0.08);--swot-o-b:rgba(192,132,252,0.35);--swot-t-bg:rgba(251,146,60,0.08);--swot-t-b:rgba(251,146,60,0.35);--num-bg:linear-gradient(135deg,#c084fc,#7c3aed);--num-color:#fff;--toc-link:#d4b8ff;--toc-active:#c084fc;--canvas-op:0.1;--card-shadow:0 8px 32px rgba(192,132,252,0.15);--hs-bg:rgba(192,132,252,0.08);--hs-border:rgba(192,132,252,0.3);--hs-num:#c084fc;--tbl-head:linear-gradient(90deg,#2d0a4e,#1a0533);--tbl-hover:rgba(192,132,252,0.06);--fp-bg:rgba(251,146,60,0.08);--fp-border:rgba(251,146,60,0.3);--fp-color:#fb923c;--badge-blue-bg:rgba(192,132,252,0.15);--badge-blue-c:#c084fc;--badge-blue-b:rgba(192,132,252,0.35);--badge-or-bg:rgba(251,146,60,0.15);--badge-or-c:#fb923c;--badge-or-b:rgba(251,146,60,0.35);--badge-gr-bg:rgba(52,211,153,0.15);--badge-gr-c:#34d399;--badge-gr-b:rgba(52,211,153,0.35);--badge-gd-bg:rgba(251,191,36,0.15);--badge-gd-c:#fbbf24;--badge-gd-b:rgba(251,191,36,0.35);--bullet:#c084fc;--tl-line:linear-gradient(to bottom,#c084fc,transparent);--tl-dot:#c084fc;--accent:#c084fc;--gold:#fbbf24;--success:#34d399;--warning:#fb923c;}
+/* ===== CONTROL BAR BUTTON FIXES ===== */
+.cb-play{background:var(--accent)!important;color:#000!important;border-radius:50%!important;width:32px!important;height:32px!important;padding:0!important;justify-content:center!important;font-size:13px!important;}
+.cb-sm{background:rgba(255,255,255,0.1)!important;color:var(--text)!important;border-radius:50%!important;width:28px!important;height:28px!important;padding:0!important;justify-content:center!important;font-size:11px!important;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c)!important;color:#fff!important;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.08)!important;color:#111!important;}
+[data-theme="white"] .cb-play{color:#fff!important;}
+/* ===== NO SELECT ===== */
+.cb-play{background:var(--accent);color:#000;min-width:36px;justify-content:center;}
+.cb-sm{background:rgba(255,255,255,0.1);color:var(--text);min-width:32px;justify-content:center;padding:6px 8px;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.07);color:#111;}
+.cb-sep{width:1px;height:20px;background:rgba(255,255,255,0.15);flex-shrink:0;}
+[data-theme="white"] .cb-sep{background:rgba(0,0,0,0.12);}
+.cb-sel{background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text);border-radius:20px;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer;outline:none;}
+[data-theme="white"] .cb-sel{border-color:rgba(0,0,0,0.15);color:#111;background:#fff;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c);color:#fff;}
+.cb-pdf:hover{filter:brightness(1.1);transform:scale(1.04);}
+.no-select{-webkit-user-select:none;user-select:none;}
+/* ===== PDF CAPTURE MODE ===== */
+body.pdf-mode #ctrl-bar,body.pdf-mode .toc,body.pdf-mode .holo-ring{display:none!important;}
+body.pdf-mode{background:#fff!important;color:#000!important;}
+body.pdf-mode .card,body.pdf-mode .stat-card,body.pdf-mode .highlight,body.pdf-mode .highlight-gold,body.pdf-mode .highlight-red{background:#fff!important;border-color:#ddd!important;color:#000!important;box-shadow:none!important;}
+body.pdf-mode .section{background:#fff!important;border-color:#eee!important;}
+body.pdf-mode .hero{background:#f0f4ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .toc{display:none!important;}
+body.pdf-mode table{border-color:#ddd!important;}
+body.pdf-mode thead th{color:#1d4ed8!important;border-color:#1d4ed8!important;}
+body.pdf-mode tbody td{color:#111!important;}
+body.pdf-mode .feature-list li{color:#111!important;border-color:#eee!important;}
+body.pdf-mode p,body.pdf-mode h3,body.pdf-mode h4,body.pdf-mode strong{color:#111!important;}
+body.pdf-mode .section-title{color:#111!important;}
+body.pdf-mode .section-title span{color:#1d4ed8!important;}
+body.pdf-mode .card-title{color:#1d4ed8!important;}
+body.pdf-mode .stat-card .value{color:#1d4ed8!important;}
+body.pdf-mode .footer{background:#f8f9fa!important;border-color:#1d4ed8!important;}
+body.pdf-mode .footer-logo{-webkit-text-fill-color:#1d4ed8!important;}
+body.pdf-mode .footer-name{color:#b45309!important;}
+body.pdf-mode .footer-patent{color:#92400e!important;border-color:#b45309!important;}
+body.pdf-mode .holo-grid{display:none!important;}
+body.pdf-mode #holo-canvas{display:none!important;}
+body.pdf-mode .swot-s{background:#f0fdf4!important;border-color:#059669!important;}
+body.pdf-mode .swot-w{background:#fef2f2!important;border-color:#dc2626!important;}
+body.pdf-mode .swot-o{background:#eff6ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .swot-t{background:#fffbeb!important;border-color:#b45309!important;}
+body.pdf-mode .swot-label{color:#111!important;}
+body.pdf-mode .badge-blue{background:#dbeafe!important;color:#1d4ed8!important;}
+body.pdf-mode .badge-orange{background:#ffedd5!important;color:#ea580c!important;}
+body.pdf-mode .badge-green{background:#dcfce7!important;color:#059669!important;}
+body.pdf-mode .badge-gold{background:#fef9c3!important;color:#b45309!important;}
+body.pdf-mode .fin-highlight{color:#059669!important;}
+body.pdf-mode .timeline::before{background:linear-gradient(to bottom,#1d4ed8,transparent)!important;}
+body.pdf-mode .timeline-item::before{background:#1d4ed8!important;}
+body.pdf-mode .muted,.pdf-mode .text-muted{color:#6b7280!important;}
+</style>
+</head>
+<body>
+
+<style>
+/* ===== BASE ===== */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Cairo','Inter','Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:15px;overflow-x:hidden;transition:background .35s,color .35s;}
+html[lang="en"] body{font-family:'Inter','Segoe UI',sans-serif;}
+#holo-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:var(--canvas-op);transition:opacity .4s;}
+.page-wrap{position:relative;z-index:1;}
+/* LANG */
+.ar{display:block;}.en{display:none;}
+html[lang="en"] .ar{display:none;}html[lang="en"] .en{display:block;}
+html[lang="en"]{direction:ltr;}
+html[lang="en"] thead th{text-align:left;}
+html[lang="en"] .timeline{padding-right:0;padding-left:30px;}
+html[lang="en"] .timeline::before{right:auto;left:0;}
+html[lang="en"] .timeline-item{padding-right:0;padding-left:30px;}
+html[lang="en"] .timeline-item::before{right:auto;left:-7px;}
+/* ===== CONTROL BAR ===== */
+#ctrl-bar{
+  position:fixed;top:14px;left:14px;z-index:9999;
+  display:flex;align-items:center;gap:6px;
+  background:rgba(5,13,26,0.82);
+  border:1px solid rgba(0,212,255,0.2);
+  border-radius:50px;padding:6px 14px;
+  backdrop-filter:blur(16px);
+  box-shadow:0 4px 24px rgba(0,0,0,0.4),0 0 0 1px rgba(0,212,255,0.08);
+  transition:background .3s,border-color .3s;
+}
+[data-theme="white"] #ctrl-bar{background:rgba(255,255,255,0.94);border-color:rgba(29,78,216,0.2);box-shadow:0 4px 24px rgba(0,0,0,0.1);}
+[data-theme="dark"] #ctrl-bar{background:rgba(15,15,15,0.9);border-color:rgba(255,255,255,0.1);}
+[data-theme="colorful"] #ctrl-bar{background:rgba(13,2,33,0.88);border-color:rgba(192,132,252,0.25);}
+.cb{border:none;cursor:pointer;border-radius:30px;font-weight:700;font-size:12px;padding:6px 13px;transition:all .2s;white-space:nowrap;display:inline-flex;align-items:center;gap:4px;letter-spacing:.3px;}
+#theme-btn{background:linear-gradient(135deg,var(--accent),#7c3aed);color:#fff;box-shadow:0 2px 10px rgba(0,212,255,0.3);}
+#theme-btn:hover{transform:scale(1.06);filter:brightness(1.15);}
+#lang-btn{background:rgba(255,255,255,0.1);color:var(--text);border:1px solid rgba(255,255,255,0.15);}
+[data-theme="white"] #lang-btn{background:rgba(0,0,0,0.06);color:#111;border-color:rgba(0,0,0,0.12);}
+#lang-btn:hover{background:rgba(255,255,255,0.2);}
+#pdf-btn{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;box-shadow:0 2px 10px rgba(239,68,68,0.3);}
+#pdf-btn:hover{transform:scale(1.06);filter:brightness(1.1);}
+.cb-sep{width:1px;height:20px;background:rgba(255,255,255,0.15);flex-shrink:0;}
+[data-theme="white"] .cb-sep{background:rgba(0,0,0,0.1);}
+.cb-sel{background:transparent;border:none;color:var(--text);font-size:11px;font-weight:700;cursor:pointer;outline:none;max-width:100px;padding:4px 2px;}
+[data-theme="white"] .cb-sel{color:#111;}
+#tts-play{background:var(--accent);color:#000;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:11px;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
+[data-theme="white"] #tts-play{color:#fff;}
+#tts-play:hover{transform:scale(1.12);}
+#tts-pause,#tts-stop{background:rgba(255,255,255,0.1);color:var(--text);border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:10px;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
+[data-theme="white"] #tts-pause,[data-theme="white"] #tts-stop{background:rgba(0,0,0,0.07);color:#111;}
+#tts-pause:hover,#tts-stop:hover{background:rgba(255,255,255,0.22);}
+/* LANG BTN top-right */
+#lang-toggle-fixed{position:fixed;top:14px;right:14px;z-index:9999;background:linear-gradient(135deg,var(--accent),#0066aa);color:#000;border:none;padding:8px 18px;border-radius:30px;font-weight:800;font-size:12px;cursor:pointer;letter-spacing:.5px;box-shadow:0 4px 16px rgba(0,212,255,0.35);transition:all .25s;}
+[data-theme="white"] #lang-toggle-fixed{background:linear-gradient(135deg,#1d4ed8,#1e40af);color:#fff;}
+[data-theme="colorful"] #lang-toggle-fixed{background:linear-gradient(135deg,#c084fc,#7c3aed);color:#fff;}
+#lang-toggle-fixed:hover{transform:scale(1.05);}
+/* ===== HERO ===== */
+.hero{background:linear-gradient(135deg,var(--hero-from) 0%,var(--bg2) 50%,var(--hero-to) 100%);padding:110px 40px 80px;text-align:center;position:relative;overflow:hidden;border-bottom:2px solid var(--accent);}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,212,255,0.12) 0%,transparent 65%);pointer-events:none;}
+[data-theme="white"] .hero::before{background:radial-gradient(ellipse at 50% 0%,rgba(29,78,216,0.07) 0%,transparent 65%);}
+[data-theme="colorful"] .hero::before{background:radial-gradient(ellipse at 50% 0%,rgba(192,132,252,0.14) 0%,transparent 65%);}
+.holo-ring{position:absolute;border-radius:50%;border:1px solid rgba(0,212,255,0.12);animation:ringPulse 5s ease-in-out infinite;pointer-events:none;}
+.holo-ring:nth-child(1){width:320px;height:320px;top:-120px;left:-120px;}
+.holo-ring:nth-child(2){width:520px;height:520px;bottom:-220px;right:-220px;animation-delay:2s;border-color:rgba(255,215,0,0.08);}
+@keyframes ringPulse{0%,100%{opacity:.2;transform:scale(1);}50%{opacity:.55;transform:scale(1.04);}}
+[data-theme="white"] .holo-ring,[data-theme="dark"] .holo-ring{display:none;}
+.hero-badge{display:inline-block;background:linear-gradient(90deg,var(--accent),#0099cc);color:#000;font-weight:800;font-size:11px;letter-spacing:3px;padding:7px 24px;border-radius:30px;margin-bottom:28px;text-transform:uppercase;position:relative;z-index:1;box-shadow:0 4px 20px rgba(0,212,255,0.3);}
+[data-theme="white"] .hero-badge{background:linear-gradient(90deg,#1d4ed8,#1e40af);color:#fff;}
+[data-theme="colorful"] .hero-badge{background:linear-gradient(90deg,#c084fc,#7c3aed);color:#fff;}
+.hero h1{font-size:clamp(3rem,8vw,6.5rem);font-weight:900;background:linear-gradient(135deg,#fff 0%,var(--accent) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;letter-spacing:-2px;position:relative;z-index:1;}
+[data-theme="white"] .hero h1{background:linear-gradient(135deg,#1e3a8a,#1d4ed8 50%,#b45309);-webkit-background-clip:text;background-clip:text;}
+[data-theme="dark"] .hero h1{background:linear-gradient(135deg,#fff,#d4d4d4);-webkit-background-clip:text;background-clip:text;}
+[data-theme="colorful"] .hero h1{background:linear-gradient(135deg,#fff,#c084fc 50%,#fbbf24);-webkit-background-clip:text;background-clip:text;}
+.hero-sub{font-size:1.2rem;color:var(--accent);margin-bottom:8px;font-weight:600;position:relative;z-index:1;}
+.hero-owner{font-size:1rem;color:var(--gold);margin-bottom:44px;position:relative;z-index:1;}
+/* HERO STATS — beautiful boxes */
+.hero-stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:44px;position:relative;z-index:1;}
+.hero-stat{text-align:center;background:var(--hs-bg);border:1px solid var(--hs-border);border-radius:18px;padding:18px 22px;backdrop-filter:blur(8px);transition:transform .2s,box-shadow .2s;min-width:110px;}
+.hero-stat:hover{transform:translateY(-5px);box-shadow:0 10px 32px rgba(0,212,255,0.18);}
+[data-theme="white"] .hero-stat:hover{box-shadow:0 10px 32px rgba(29,78,216,0.12);}
+.hero-stat .num{font-size:1.7rem;font-weight:900;color:var(--hs-num);display:block;line-height:1.2;}
+.hero-stat .lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block;line-height:1.4;}
+/* ===== CONTROL BAR BUTTON FIXES ===== */
+.cb-play{background:var(--accent)!important;color:#000!important;border-radius:50%!important;width:32px!important;height:32px!important;padding:0!important;justify-content:center!important;font-size:13px!important;}
+.cb-sm{background:rgba(255,255,255,0.1)!important;color:var(--text)!important;border-radius:50%!important;width:28px!important;height:28px!important;padding:0!important;justify-content:center!important;font-size:11px!important;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c)!important;color:#fff!important;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.08)!important;color:#111!important;}
+[data-theme="white"] .cb-play{color:#fff!important;}
+/* ===== NO SELECT ===== */
+.cb-play{background:var(--accent);color:#000;min-width:36px;justify-content:center;}
+.cb-sm{background:rgba(255,255,255,0.1);color:var(--text);min-width:32px;justify-content:center;padding:6px 8px;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.07);color:#111;}
+.cb-sep{width:1px;height:20px;background:rgba(255,255,255,0.15);flex-shrink:0;}
+[data-theme="white"] .cb-sep{background:rgba(0,0,0,0.12);}
+.cb-sel{background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text);border-radius:20px;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer;outline:none;}
+[data-theme="white"] .cb-sel{border-color:rgba(0,0,0,0.15);color:#111;background:#fff;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c);color:#fff;}
+.cb-pdf:hover{filter:brightness(1.1);transform:scale(1.04);}
+.no-select{-webkit-user-select:none;user-select:none;}
+/* ===== PDF CAPTURE MODE ===== */
+body.pdf-mode #ctrl-bar,body.pdf-mode .toc,body.pdf-mode .holo-ring{display:none!important;}
+body.pdf-mode{background:#fff!important;color:#000!important;}
+body.pdf-mode .card,body.pdf-mode .stat-card,body.pdf-mode .highlight,body.pdf-mode .highlight-gold,body.pdf-mode .highlight-red{background:#fff!important;border-color:#ddd!important;color:#000!important;box-shadow:none!important;}
+body.pdf-mode .section{background:#fff!important;border-color:#eee!important;}
+body.pdf-mode .hero{background:#f0f4ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .toc{display:none!important;}
+body.pdf-mode table{border-color:#ddd!important;}
+body.pdf-mode thead th{color:#1d4ed8!important;border-color:#1d4ed8!important;}
+body.pdf-mode tbody td{color:#111!important;}
+body.pdf-mode .feature-list li{color:#111!important;border-color:#eee!important;}
+body.pdf-mode p,body.pdf-mode h3,body.pdf-mode h4,body.pdf-mode strong{color:#111!important;}
+body.pdf-mode .section-title{color:#111!important;}
+body.pdf-mode .section-title span{color:#1d4ed8!important;}
+body.pdf-mode .card-title{color:#1d4ed8!important;}
+body.pdf-mode .stat-card .value{color:#1d4ed8!important;}
+body.pdf-mode .footer{background:#f8f9fa!important;border-color:#1d4ed8!important;}
+body.pdf-mode .footer-logo{-webkit-text-fill-color:#1d4ed8!important;}
+body.pdf-mode .footer-name{color:#b45309!important;}
+body.pdf-mode .footer-patent{color:#92400e!important;border-color:#b45309!important;}
+body.pdf-mode .holo-grid{display:none!important;}
+body.pdf-mode #holo-canvas{display:none!important;}
+body.pdf-mode .swot-s{background:#f0fdf4!important;border-color:#059669!important;}
+body.pdf-mode .swot-w{background:#fef2f2!important;border-color:#dc2626!important;}
+body.pdf-mode .swot-o{background:#eff6ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .swot-t{background:#fffbeb!important;border-color:#b45309!important;}
+body.pdf-mode .swot-label{color:#111!important;}
+body.pdf-mode .badge-blue{background:#dbeafe!important;color:#1d4ed8!important;}
+body.pdf-mode .badge-orange{background:#ffedd5!important;color:#ea580c!important;}
+body.pdf-mode .badge-green{background:#dcfce7!important;color:#059669!important;}
+body.pdf-mode .badge-gold{background:#fef9c3!important;color:#b45309!important;}
+body.pdf-mode .fin-highlight{color:#059669!important;}
+body.pdf-mode .timeline::before{background:linear-gradient(to bottom,#1d4ed8,transparent)!important;}
+body.pdf-mode .timeline-item::before{background:#1d4ed8!important;}
+body.pdf-mode .muted,.pdf-mode .text-muted{color:#6b7280!important;}
+</style>
+
+<style>
+/* ===== NAV ===== */
+.toc{background:var(--nav-bg);border-bottom:1px solid var(--border);padding:0 16px;position:sticky;top:0;z-index:200;overflow-x:auto;white-space:nowrap;backdrop-filter:blur(14px);scrollbar-width:thin;scrollbar-color:var(--border) transparent;}
+.toc::-webkit-scrollbar{height:3px;}.toc::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.toc-inner{display:inline-flex;gap:0;padding:0 4px;}
+.toc a{display:inline-flex;align-items:center;padding:13px 14px;color:var(--toc-link);text-decoration:none;font-size:13px;font-weight:700;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap;border-radius:4px 4px 0 0;}
+.toc a:hover,.toc a.active{color:var(--toc-active);border-bottom-color:var(--toc-active);}
+/* ===== LAYOUT ===== */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.section{padding:72px 0;border-bottom:1px solid var(--border);position:relative;}
+.section:last-child{border-bottom:none;}
+.holo-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.025) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0;}
+[data-theme="white"] .holo-grid,[data-theme="dark"] .holo-grid{display:none;}
+[data-theme="colorful"] .holo-grid{background-image:linear-gradient(rgba(192,132,252,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(192,132,252,0.03) 1px,transparent 1px);}
+.section>.container{position:relative;z-index:1;}
+.section-header{display:flex;align-items:center;gap:16px;margin-bottom:40px;}
+.section-num{width:52px;height:52px;background:var(--num-bg);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:900;color:var(--num-color);flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,0.2);}
+.section-title{font-size:1.9rem;font-weight:900;color:var(--text);}
+.section-title span{color:var(--accent);}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px;}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+/* ===== CARDS ===== */
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px;margin-bottom:20px;transition:border-color .2s,transform .2s,box-shadow .2s;position:relative;overflow:hidden;}
+.card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .3s;}
+.card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--card-shadow);}
+.card:hover::after{opacity:1;}
+.card-title{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.card-title::before{content:'';width:4px;height:22px;background:linear-gradient(to bottom,var(--accent),transparent);border-radius:2px;display:inline-block;flex-shrink:0;}
+/* HIGHLIGHTS */
+.highlight{background:var(--hl-bg);border:1px solid var(--hl-border);border-radius:18px;padding:28px;margin-bottom:24px;}
+.highlight-gold{background:var(--hl-gold-bg);border:1px solid var(--hl-gold-border);border-radius:18px;padding:28px;margin-bottom:24px;}
+.highlight-red{background:var(--hl-red-bg);border:1px solid var(--hl-red-border);border-radius:18px;padding:28px;margin-bottom:24px;}
+/* TABLES */
+.table-wrap{overflow-x:auto;margin:20px 0;border-radius:14px;border:1px solid var(--border);}
+table{width:100%;border-collapse:collapse;}
+thead tr{background:var(--tbl-head);}
+thead th{padding:14px 18px;text-align:right;font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.5px;border-bottom:2px solid var(--accent);}
+html[lang="en"] thead th{text-align:left;}
+tbody tr{border-bottom:1px solid var(--border);transition:background .15s;}
+tbody tr:hover{background:var(--tbl-hover);}
+tbody tr:last-child{border-bottom:none;}
+tbody td{padding:13px 18px;font-size:14px;color:var(--text);}
+tbody td:first-child{color:var(--muted);}
+.fin-table thead th{color:var(--gold);border-bottom-color:var(--gold);}
+.fin-highlight{color:var(--success);font-weight:700;}
+/* STAT CARDS */
+.stat-card{background:var(--stat-bg);border:1px solid var(--border);border-radius:18px;padding:24px;text-align:center;transition:all .2s;position:relative;overflow:hidden;}
+.stat-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .3s;}
+.stat-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--card-shadow);}
+.stat-card:hover::before{opacity:1;}
+.stat-card .value{font-size:1.9rem;font-weight:900;color:var(--accent);display:block;margin-bottom:6px;}
+.stat-card .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;line-height:1.5;}
+.stat-card.gold .value{color:var(--gold);}
+.stat-card.green .value{color:var(--success);}
+.stat-card.orange .value{color:var(--warning);}
+/* BADGES */
+.badge{display:inline-block;padding:4px 13px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:.5px;}
+.badge-blue{background:var(--badge-blue-bg);color:var(--badge-blue-c);border:1px solid var(--badge-blue-b);}
+.badge-gold{background:var(--badge-gd-bg);color:var(--badge-gd-c);border:1px solid var(--badge-gd-b);}
+.badge-green{background:var(--badge-gr-bg);color:var(--badge-gr-c);border:1px solid var(--badge-gr-b);}
+.badge-orange{background:var(--badge-or-bg);color:var(--badge-or-c);border:1px solid var(--badge-or-b);}
+/* FEATURE LIST */
+.feature-list{list-style:none;}
+.feature-list li{padding:9px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--text);}
+.feature-list li:last-child{border-bottom:none;}
+.feature-list li::before{content:'◆';color:var(--bullet);font-size:9px;margin-top:6px;flex-shrink:0;}
+/* SWOT */
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.swot-box{border-radius:16px;padding:24px;}
+.swot-s{background:var(--swot-s-bg);border:1px solid var(--swot-s-b);}
+.swot-w{background:var(--swot-w-bg);border:1px solid var(--swot-w-b);}
+.swot-o{background:var(--swot-o-bg);border:1px solid var(--swot-o-b);}
+.swot-t{background:var(--swot-t-bg);border:1px solid var(--swot-t-b);}
+.swot-label{font-size:1.05rem;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.swot-s .swot-label{color:var(--success);}
+.swot-w .swot-label{color:var(--warning);}
+.swot-o .swot-label{color:var(--accent);}
+.swot-t .swot-label{color:var(--gold);}
+/* TIMELINE */
+.timeline{position:relative;padding-right:30px;}
+.timeline::before{content:'';position:absolute;right:0;top:0;bottom:0;width:2px;background:var(--tl-line);}
+.timeline-item{position:relative;padding:18px 30px 18px 0;margin-bottom:6px;}
+.timeline-item::before{content:'';position:absolute;right:-7px;top:26px;width:14px;height:14px;background:var(--tl-dot);border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 10px rgba(0,212,255,0.4);}
+.timeline-date{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:1px;margin-bottom:4px;}
+.timeline-text{font-size:14px;color:var(--text);}
+/* UTILS */
+p{margin-bottom:12px;color:var(--text);}
+h3{color:var(--h3);font-size:1.05rem;margin:20px 0 10px;}
+h4{color:var(--h4);font-size:1rem;margin:16px 0 8px;}
+strong{color:var(--strong);}
+.divider{height:1px;background:var(--divider);margin:20px 0;}
+.text-accent{color:var(--accent);}
+.text-gold{color:var(--gold);}
+.text-green{color:var(--success);}
+.text-muted{color:var(--muted);}
+.mt-20{margin-top:20px;}
+/* FOOTER */
+.footer{background:var(--footer-bg);border-top:2px solid var(--accent);padding:60px 40px;text-align:center;position:relative;overflow:hidden;}
+.footer-logo{font-size:2.5rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;}
+.footer-name{color:var(--gold);font-size:1.1rem;font-weight:700;margin-bottom:8px;}
+.footer-title{color:var(--muted);font-size:.9rem;margin-bottom:24px;}
+.footer-patent{background:var(--fp-bg);border:1px solid var(--fp-border);border-radius:12px;padding:20px 32px;display:inline-block;max-width:750px;font-size:13px;color:var(--fp-color);line-height:1.8;}
+/* GLOW CARD */
+@keyframes glowBorder{0%,100%{box-shadow:0 0 5px rgba(0,212,255,0.15);}50%{box-shadow:0 0 22px rgba(0,212,255,0.4);}}
+.glow-card{animation:glowBorder 3s ease-in-out infinite;}
+/* NO SELECT for PDF */
+.cb-play{background:var(--accent);color:#000;min-width:36px;justify-content:center;}
+.cb-sm{background:rgba(255,255,255,0.1);color:var(--text);min-width:32px;justify-content:center;padding:6px 8px;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.07);color:#111;}
+.cb-sep{width:1px;height:20px;background:rgba(255,255,255,0.15);flex-shrink:0;}
+[data-theme="white"] .cb-sep{background:rgba(0,0,0,0.12);}
+.cb-sel{background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text);border-radius:20px;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer;outline:none;}
+[data-theme="white"] .cb-sel{border-color:rgba(0,0,0,0.15);color:#111;background:#fff;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c);color:#fff;}
+.cb-pdf:hover{filter:brightness(1.1);transform:scale(1.04);}
+.no-select{-webkit-user-select:none;user-select:none;}
+/* PDF PROGRESS */
+#pdf-progress{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:99999;flex-direction:column;align-items:center;justify-content:center;gap:20px;}
+#pdf-progress.show{display:flex;}
+#pdf-progress p{color:#fff;font-size:1.1rem;font-weight:700;}
+#pdf-bar-wrap{width:320px;height:10px;background:rgba(255,255,255,0.15);border-radius:5px;overflow:hidden;}
+#pdf-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--gold));border-radius:5px;transition:width .3s;}
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{padding:70px 20px 50px;}
+  .hero-stats{gap:10px;}
+  .swot-grid{grid-template-columns:1fr;}
+  .section{padding:50px 0;}
+  .container{padding:0 16px;}
+  .toc a{padding:12px 10px;font-size:12px;}
+  #ctrl-bar{padding:5px 10px;gap:4px;}
+  .cb{padding:5px 9px;font-size:11px;}
+}
+/* ===== CONTROL BAR BUTTON FIXES ===== */
+.cb-play{background:var(--accent)!important;color:#000!important;border-radius:50%!important;width:32px!important;height:32px!important;padding:0!important;justify-content:center!important;font-size:13px!important;}
+.cb-sm{background:rgba(255,255,255,0.1)!important;color:var(--text)!important;border-radius:50%!important;width:28px!important;height:28px!important;padding:0!important;justify-content:center!important;font-size:11px!important;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c)!important;color:#fff!important;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.08)!important;color:#111!important;}
+[data-theme="white"] .cb-play{color:#fff!important;}
+/* ===== NO SELECT ===== */
+.cb-play{background:var(--accent);color:#000;min-width:36px;justify-content:center;}
+.cb-sm{background:rgba(255,255,255,0.1);color:var(--text);min-width:32px;justify-content:center;padding:6px 8px;}
+[data-theme="white"] .cb-sm{background:rgba(0,0,0,0.07);color:#111;}
+.cb-sep{width:1px;height:20px;background:rgba(255,255,255,0.15);flex-shrink:0;}
+[data-theme="white"] .cb-sep{background:rgba(0,0,0,0.12);}
+.cb-sel{background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text);border-radius:20px;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer;outline:none;}
+[data-theme="white"] .cb-sel{border-color:rgba(0,0,0,0.15);color:#111;background:#fff;}
+.cb-pdf{background:linear-gradient(135deg,#ef4444,#b91c1c);color:#fff;}
+.cb-pdf:hover{filter:brightness(1.1);transform:scale(1.04);}
+.no-select{-webkit-user-select:none;user-select:none;}
+/* ===== PDF CAPTURE MODE ===== */
+body.pdf-mode #ctrl-bar,body.pdf-mode .toc,body.pdf-mode .holo-ring{display:none!important;}
+body.pdf-mode{background:#fff!important;color:#000!important;}
+body.pdf-mode .card,body.pdf-mode .stat-card,body.pdf-mode .highlight,body.pdf-mode .highlight-gold,body.pdf-mode .highlight-red{background:#fff!important;border-color:#ddd!important;color:#000!important;box-shadow:none!important;}
+body.pdf-mode .section{background:#fff!important;border-color:#eee!important;}
+body.pdf-mode .hero{background:#f0f4ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .toc{display:none!important;}
+body.pdf-mode table{border-color:#ddd!important;}
+body.pdf-mode thead th{color:#1d4ed8!important;border-color:#1d4ed8!important;}
+body.pdf-mode tbody td{color:#111!important;}
+body.pdf-mode .feature-list li{color:#111!important;border-color:#eee!important;}
+body.pdf-mode p,body.pdf-mode h3,body.pdf-mode h4,body.pdf-mode strong{color:#111!important;}
+body.pdf-mode .section-title{color:#111!important;}
+body.pdf-mode .section-title span{color:#1d4ed8!important;}
+body.pdf-mode .card-title{color:#1d4ed8!important;}
+body.pdf-mode .stat-card .value{color:#1d4ed8!important;}
+body.pdf-mode .footer{background:#f8f9fa!important;border-color:#1d4ed8!important;}
+body.pdf-mode .footer-logo{-webkit-text-fill-color:#1d4ed8!important;}
+body.pdf-mode .footer-name{color:#b45309!important;}
+body.pdf-mode .footer-patent{color:#92400e!important;border-color:#b45309!important;}
+body.pdf-mode .holo-grid{display:none!important;}
+body.pdf-mode #holo-canvas{display:none!important;}
+body.pdf-mode .swot-s{background:#f0fdf4!important;border-color:#059669!important;}
+body.pdf-mode .swot-w{background:#fef2f2!important;border-color:#dc2626!important;}
+body.pdf-mode .swot-o{background:#eff6ff!important;border-color:#1d4ed8!important;}
+body.pdf-mode .swot-t{background:#fffbeb!important;border-color:#b45309!important;}
+body.pdf-mode .swot-label{color:#111!important;}
+body.pdf-mode .badge-blue{background:#dbeafe!important;color:#1d4ed8!important;}
+body.pdf-mode .badge-orange{background:#ffedd5!important;color:#ea580c!important;}
+body.pdf-mode .badge-green{background:#dcfce7!important;color:#059669!important;}
+body.pdf-mode .badge-gold{background:#fef9c3!important;color:#b45309!important;}
+body.pdf-mode .fin-highlight{color:#059669!important;}
+body.pdf-mode .timeline::before{background:linear-gradient(to bottom,#1d4ed8,transparent)!important;}
+body.pdf-mode .timeline-item::before{background:#1d4ed8!important;}
+body.pdf-mode .muted,.pdf-mode .text-muted{color:#6b7280!important;}
+</style>
+
+<canvas id="holo-canvas"></canvas>
+
+<!-- PDF PROGRESS OVERLAY -->
+<div id="pdf-progress">
+  <p class="ar">جارٍ إنشاء PDF... يرجى الانتظار</p>
+  <p class="en">Generating PDF... Please wait</p>
+  <div id="pdf-bar-wrap"><div id="pdf-bar"></div></div>
+  <p id="pdf-status" style="color:var(--muted);font-size:.9rem;"></p>
+</div>
+
+<!-- CONTROL BAR -->
+<div id="ctrl-bar">
+  <button id="theme-btn" class="cb" onclick="cycleTheme()" title="تغيير الثيم">🎨 <span class="ar">الثيم</span><span class="en">Theme</span></button>
+  <div class="cb-sep"></div>
+  <select id="tts-scope" class="cb-sel"><option value="section" class="ar">القسم</option><option value="section" class="en">Section</option><option value="page" class="ar">الكل</option><option value="page" class="en">All</option></select>
+  <select id="tts-lang" class="cb-sel"><option value="auto">🔊 Auto</option></select>
+  <button id="tts-play" class="cb cb-play" title="تشغيل / Play">▶</button>
+  <button id="tts-pause" class="cb cb-sm" title="إيقاف مؤقت / Pause">⏸</button>
+  <button id="tts-stop" class="cb cb-sm" title="إيقاف / Stop">⏹</button>
+  <div class="cb-sep"></div>
+  <button id="pdf-btn" class="cb" onclick="downloadPDF()">📄 <span class="ar">PDF</span><span class="en">PDF</span></button>
+</div>
+
+<button id="lang-toggle-fixed" onclick="toggleLang()">🌐 <span id="lang-label">English</span></button>
+
+<div class="page-wrap">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="holo-ring"></div><div class="holo-ring"></div>
+  <div class="hero-badge ar">دراسة الجدوى الشاملة</div>
+  <div class="hero-badge en">Comprehensive Feasibility Study</div>
+  <h1>ROBOT HOUSE</h1>
+  <div class="hero-sub ar">منزل المستقبل الذكي — تقنية لم يسبق لها مثيل في العالم</div>
+  <div class="hero-sub en">The Future Smart Home — Technology Unprecedented Worldwide</div>
+  <div class="hero-owner ar">صاحب المشروع: <strong>محمد داود إسماعيل العامري</strong></div>
+  <div class="hero-owner en">Project Owner: <strong>Mohammed Daoud Ismail Al-Ameri</strong></div>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="num">$10K</span><span class="lbl ar">سعر الغرفة</span><span class="lbl en">Room Price</span></div>
+    <div class="hero-stat"><span class="num">$50K</span><span class="lbl ar">سعر السيارة</span><span class="lbl en">Car Price</span></div>
+    <div class="hero-stat"><span class="num">$1B+</span><span class="lbl ar">عائد السنة الأولى</span><span class="lbl en">Year 1 Return</span></div>
+    <div class="hero-stat"><span class="num">730</span><span class="lbl ar">موظف السنة الأولى</span><span class="lbl en">Year 1 Employees</span></div>
+    <div class="hero-stat"><span class="num">4.5</span><span class="lbl ar">سنوات التنفيذ</span><span class="lbl en">Yrs Timeline</span></div>
+    <div class="hero-stat"><span class="num">40%</span><span class="lbl ar">هامش الربح</span><span class="lbl en">Profit Margin</span></div>
+  </div>
+</section>
+
+<!-- NAV -->
+<nav class="toc" id="main-nav">
+  <div class="toc-inner">
+    <a href="#idea"><span class="ar">فكرة المشروع</span><span class="en">Project Idea</span></a>
+    <a href="#legal"><span class="ar">الشكل القانوني</span><span class="en">Legal Form</span></a>
+    <a href="#products"><span class="ar">المنتجات</span><span class="en">Products</span></a>
+    <a href="#tech"><span class="ar">التكنولوجيا</span><span class="en">Technology</span></a>
+    <a href="#economy"><span class="ar">الاقتصاد</span><span class="en">Economy</span></a>
+    <a href="#market"><span class="ar">السوق</span><span class="en">Market</span></a>
+    <a href="#marketing"><span class="ar">التسويق</span><span class="en">Marketing</span></a>
+    <a href="#team"><span class="ar">الفريق</span><span class="en">Team</span></a>
+    <a href="#timeline"><span class="ar">الجدول الزمني</span><span class="en">Timeline</span></a>
+    <a href="#technical"><span class="ar">القسم الفني</span><span class="en">Technical</span></a>
+    <a href="#model"><span class="ar">نموذج العمل</span><span class="en">Business Model</span></a>
+    <a href="#risks"><span class="ar">عوامل الخطر</span><span class="en">Risk Factors</span></a>
+    <a href="#capacity"><span class="ar">القدرة</span><span class="en">Capacity</span></a>
+    <a href="#financial"><span class="ar">التوقعات المالية</span><span class="en">Financials</span></a>
+    <a href="#capital"><span class="ar">رأس المال</span><span class="en">Capital</span></a>
+    <a href="#analysis"><span class="ar">التحليل الشامل</span><span class="en">Full Analysis</span></a>
+    <a href="#env"><span class="ar">البيئة</span><span class="en">Environment</span></a>
+    <a href="#social"><span class="ar">الدراسة الاجتماعية</span><span class="en">Social Study</span></a>
+    <a href="#note"><span class="ar">ملاحظة هامة</span><span class="en">Important Note</span></a>
+  </div>
+</nav>
+
+<!-- S1: PROJECT IDEA -->
+<section class="section" id="idea"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">1</div><div class="section-title"><span class="ar">فكرة <span>المشروع</span></span><span class="en">Project <span>Idea</span></span></div></div>
+  <div class="highlight glow-card">
+    <p class="ar">يقوم مشروع <strong>ROBOT HOUSE</strong> على إمكانية تنفيذ منزل ذكي متكامل على أرض الواقع، يجمع بين أحدث تقنيات المواد والذكاء الاصطناعي وأنظمة التحكم الذكي في منظومة سكنية لم يسبق لها مثيل في العالم.</p>
+    <p class="en">The <strong>ROBOT HOUSE</strong> project is based on implementing a fully integrated smart home in reality, combining the latest material technologies, artificial intelligence, and smart control systems into a residential solution unprecedented worldwide.</p>
+  </div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">🏗️ <span class="ar">المواد والبنية الإنشائية</span><span class="en">Materials &amp; Construction</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">المادة الداخلية من الألومنيوم على شكل قرص العسل لتقليل الوزن</span><span class="en">Interior: honeycomb-shaped aluminum to minimize weight</span></li>
+        <li><span class="ar">المواد الخارجية: أكريليك وبولي كربونات وبولي إيثيلين معالج ضد الكسر والرصاص والعوامل البيئية</span><span class="en">Exterior: acrylic, polycarbonate, polyethylene — treated against breakage, bullets &amp; environmental factors</span></li>
+        <li><span class="ar">معالجة بتقنية النانو ومركبات الجرافين لتغيير لون المنزل من الخارج</span><span class="en">Nano-technology &amp; graphene compounds for exterior color-changing capability</span></li>
+        <li><span class="ar">التحكم في اللون عبر الشاشة الداخلية أو الهاتف الذكي</span><span class="en">Color control via internal screen or smartphone</span></li>
+        <li><span class="ar">سمك الجدار الإجمالي 70 سم (20 سم أعمدة + 50 سم صب بلاستيك)</span><span class="en">Total wall thickness: 70 cm (20 cm columns + 50 cm plastic casting)</span></li>
+        <li><span class="ar">سمك الأرضية والسقف 50 سم</span><span class="en">Floor and ceiling thickness: 50 cm</span></li>
+        <li><span class="ar">وزن الجدار من 400 إلى 500 كيلوغرام مع جميع المحتويات</span><span class="en">Wall weight: 400–500 kg including all contents</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">📐 <span class="ar">المقاسات والمساحات</span><span class="en">Dimensions &amp; Spaces</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">مساحة الغرفة الواحدة: 25.6 م² من الخارج، 20 م² من الداخل</span><span class="en">Single room: 25.6 m² exterior, 20 m² interior</span></li>
+        <li><span class="ar">تركيب 4 غرف جنباً إلى جنب يعطي صالوناً 80 م² بعمود واحد فقط في المنتصف</span><span class="en">4 rooms side by side = 80 m² living room with only one central column</span></li>
+        <li><span class="ar">العمود الأوسط مزود بإضاءة من الأعلى إلى الأسفل على شكل بلورة سداسية</span><span class="en">Central column: top-to-bottom hexagonal crystal lighting</span></li>
+        <li><span class="ar">الغرف متصلة ببعضها بوصلات خاصة من جميع الاتجاهات</span><span class="en">Rooms connected via special joints from all directions</span></li>
+        <li><span class="ar">طاولة في منتصف كل غرفة بحجم 1 متر مع 4 كراسي مخفية داخل الأرضية</span><span class="en">1-meter table per room with 4 chairs hidden inside the floor</span></li>
+        <li><span class="ar">إضاءة ملونة وتصميم ثلاثي الأبعاد</span><span class="en">Colored lighting and 3D design</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">⚡ <span class="ar">الطاقة والأنظمة الذكية</span><span class="en">Energy &amp; Smart Systems</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">ألواح شمسية مدمجة مع السقف على شكل عدسة محدبة لتجميع الطاقة من جميع الاتجاهات</span><span class="en">Solar panels integrated as convex lens to collect energy from all directions</span></li>
+        <li><span class="ar">بطارية 24 فولت بحجم 25 سم وارتفاع 60 سم داخل الأعمدة</span><span class="en">24V battery (25 cm wide, 60 cm tall) inside the columns</span></li>
+        <li><span class="ar">فتيل داخل البطارية ينقطع تلقائياً عند التلامس بين القطبين</span><span class="en">Internal battery fuse that automatically breaks upon pole contact</span></li>
+        <li><span class="ar">سقف ذكي بفيلم يتحول من شفاف إلى معتم بالتحكم</span><span class="en">Smart ceiling film: switches from transparent to opaque on command</span></li>
+        <li><span class="ar">نظام إنترنت خاص بمعرف الشركة المصنعة لمنع الاختراق</span><span class="en">Proprietary internet system with manufacturer ID to prevent hacking</span></li>
+        <li><span class="ar">نظام تكييف دائري: مجاري هواء داخل الأعمدة توزع الهواء بالتساوي من كل ركن</span><span class="en">Circular AC: air ducts inside columns distribute air equally from every corner</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🔒 <span class="ar">الأمان والحماية</span><span class="en">Security &amp; Protection</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">نظام التحكم الصوتي وبصمة الإصبع</span><span class="en">Voice control and fingerprint recognition system</span></li>
+        <li><span class="ar">نظام التعرف على الوجه من الخارج لأصحاب المنزل</span><span class="en">Facial recognition for homeowners from outside</span></li>
+        <li><span class="ar">إنذار تلقائي عند محاولة السرقة مع اتصال فوري بمركز الشرطة</span><span class="en">Automatic alarm on theft attempt with immediate police connection</span></li>
+        <li><span class="ar">إيقاف تشغيل النظام المنزلي تلقائياً عند الاختراق</span><span class="en">Automatic complete home system shutdown upon intrusion</span></li>
+        <li><span class="ar">نظام إطفاء حريق: إغلاق تلقائي دقيقتين ثم رش مسحوق النار من السقف</span><span class="en">Fire suppression: 2-min auto-seal then ceiling fire powder spray</span></li>
+        <li><span class="ar">المنزل مقاوم للحريق ومقاوم للماء بالكامل</span><span class="en">Fully fire-resistant and waterproof</span></li>
+        <li><span class="ar">خزائن غير مرئية تفتح بالبصمة مع نظام مراقبة داخلي</span><span class="en">Invisible biometric safes with internal surveillance system</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><div class="card-title">🛏️ <span class="ar">أنظمة الجدران الذكية</span><span class="en">Smart Wall Systems</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">جدار يحتوي على 4 أسرة فوق بعضها</span><span class="en">Wall with 4 stacked bunk beds</span></li>
+        <li><span class="ar">جدار بمقاعد عرض 2 متر تفتح وتغلق تلقائياً</span><span class="en">Wall with 2-meter seats that open/close automatically</span></li>
+        <li><span class="ar">سرير نوم دائري 2.5 متر مكيف من الداخل بفتحات هواء</span><span class="en">2.5-meter circular bed with internal AC vents</span></li>
+        <li><span class="ar">أدراج لجميع المستلزمات بإغلاق محكم تلقائي</span><span class="en">Drawers with automatic airtight closure</span></li>
+        <li><span class="ar">رافعة هيدروليكية لإغلاق السرير الدائري</span><span class="en">Hydraulic lift for closing the circular bed</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">💧 <span class="ar">نظام المياه</span><span class="en">Water System</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">خزان مياه 4.60 م عرض × 3.50 م ارتفاع داخل الجدار</span><span class="en">Water tank 4.60 m wide × 3.50 m tall inside the wall</span></li>
+        <li><span class="ar">سخان مياه ومنطقة بطاريات للتحكم في درجة الحرارة</span><span class="en">Water heater and battery zone for temperature control</span></li>
+        <li><span class="ar">فلاتر تعقيم مياه متكاملة</span><span class="en">Integrated water sterilization filters</span></li>
+        <li><span class="ar">نافذة 1×1 متر في منتصف جدار الخزان</span><span class="en">1×1 m window in the center of the tank wall</span></li>
+        <li><span class="ar">الخزان غير مرئي ومضغوط كالجدار</span><span class="en">Tank invisible and flush with the wall</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🚿 <span class="ar">نظام الحمام المتطور</span><span class="en">Advanced Bathroom System</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">حجم الحمام بحجم الغرفة الكاملة</span><span class="en">Bathroom occupies a full room-sized space</span></li>
+        <li><span class="ar">5 أقسام: 4 حمامات منفصلة + جاكوزي</span><span class="en">5 sections: 4 separate bathrooms + jacuzzi</span></li>
+        <li><span class="ar">مكان للغسالة في المنتصف</span><span class="en">Washing machine space in the center</span></li>
+        <li><span class="ar">جهاز تحويل المخلفات إلى سماد زراعي</span><span class="en">Device converting waste into agricultural fertilizer</span></li>
+        <li><span class="ar">تحويل مياه الصرف إلى مياه ري زراعي</span><span class="en">Sewage water converted to agricultural irrigation water</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card"><div class="card-title">🔊 <span class="ar">نظام الصوت والتحكم</span><span class="en">Audio &amp; Control System</span></div>
+    <p class="ar">يحتوي المنزل على نظام صوتي بتقنية تردد الهوائي لتقليل الضوضاء، مع سماعات دائرية الشكل حول المكيف. يتيح التحكم في المنزل بالكامل عبر الميكروفون المدمج. كما يوجد كمبيوتر مدمج بجوار باب كل غرفة يرسم تلقائياً مخطط كل ما تم تثبيته عند ربط الغرف ببعضها. الأضواء المدمجة تعطي تنبيهات في حالة حدوث أي طارئ.</p>
+    <p class="en">The home features an antenna-frequency audio system for noise reduction, with circular speakers around the AC unit. Full home control via built-in microphone. An embedded computer beside each room door automatically maps all installed components when rooms are connected. Integrated lights provide alerts in any emergency.</p>
+  </div>
+</div></section>
+
+<!-- S2: LEGAL -->
+<section class="section" id="legal"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">2</div><div class="section-title"><span class="ar">الشكل <span>القانوني</span></span><span class="en">Legal <span>Structure</span></span></div></div>
+  <div class="grid-2">
+    <div class="highlight">
+      <h3>🏢 <span class="ar">نوع الشركة</span><span class="en">Company Type</span></h3>
+      <p style="font-size:1.2rem;font-weight:700;color:var(--accent);" class="ar">شركة خاصة ذات مسؤولية محدودة</p>
+      <p style="font-size:1.2rem;font-weight:700;color:var(--accent);" class="en">Private Limited Liability Company (LLC)</p>
+      <p class="ar">يمنح هذا الشكل القانوني حماية كاملة للأصول الشخصية مع مرونة في الإدارة والتوسع.</p>
+      <p class="en">This legal structure provides full personal asset protection with flexibility in management and expansion.</p>
+    </div>
+    <div class="highlight-gold">
+      <h3>👤 <span class="ar">الملكية</span><span class="en">Ownership</span></h3>
+      <p style="font-size:1.1rem;font-weight:700;color:var(--gold);" class="ar">محمد داود إسماعيل العامري</p>
+      <p style="font-size:1.1rem;font-weight:700;color:var(--gold);" class="en">Mohammed Daoud Ismail Al-Ameri</p>
+      <p class="ar">المؤسس والرئيس التنفيذي — ملكية فردية كاملة بدون شركاء</p>
+      <p class="en">Founder &amp; CEO — Full sole ownership with no partners</p>
+      <div class="divider"></div>
+      <p class="text-muted ar">لا يوجد شركاء في المرحلة الحالية</p>
+      <p class="text-muted en">No partners at the current stage</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- S3: PRODUCTS -->
+<section class="section" id="products"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">3</div><div class="section-title"><span class="ar">المنتجات <span>والخدمات</span></span><span class="en">Products <span>&amp; Services</span></span></div></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th><span class="ar">اسم المنتج</span><span class="en">Product</span></th><th><span class="ar">الوصف</span><span class="en">Description</span></th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="badge badge-blue ar">المنزل — سكني</span><span class="badge badge-blue en">House — Residential</span></td><td><span class="ar">يمكنك العيش فيه في أي مكان في العالم، لا يحتاج إلى بنية تحتية، يمكن إنشاء جسر فوق أو تحت سطح البحر لربط بلدين</span><span class="en">Can be lived in anywhere in the world, requires no infrastructure, can bridge two countries above or below sea level</span></td></tr>
+      <tr><td>2</td><td><span class="badge badge-blue ar">المنزل — عسكري وأمني</span><span class="badge badge-blue en">House — Military &amp; Security</span></td><td><span class="ar">استخدام الجيش والأمن العام والأفراد، غرف منفصلة بنفس الحجم</span><span class="en">For military, public security, and individual use with separate rooms of equal size</span></td></tr>
+      <tr><td>3</td><td><span class="badge badge-blue ar">المنزل — المقاسات</span><span class="badge badge-blue en">House — Dimensions</span></td><td><span class="ar">مساحة الغرفة الواحدة 25.6 م² من الخارج و20 م² من الداخل</span><span class="en">Single room: 25.6 m² exterior, 20 m² interior</span></td></tr>
+      <tr><td>4</td><td><span class="badge badge-orange ar">سيارة روبوت</span><span class="badge badge-orange en">Robot Car</span></td><td><span class="ar">تعمل بدون وقود وبدون بطاريات، بمحرك توربو من الخلف، تسافر براً وبحراً دون توقف، مضادة للرصاص، سهلة الفك والتركيب</span><span class="en">Operates without fuel or batteries, rear turbo engine, travels land and sea without stopping, bullet-resistant, easy to assemble/disassemble</span></td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">الخصائص الفريدة لكل منتج</h3><h3 class="en" style="margin-top:32px;">Unique Features of Each Product</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th><span class="ar">المنتج</span><span class="en">Product</span></th><th><span class="ar">الخاصية الفريدة</span><span class="en">Unique Feature</span></th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="ar">المنزل</span><span class="en">House</span></td><td><span class="ar">الذكاء التقني من المستوى السادس للخدمات</span><span class="en">Level-6 technical intelligence for services</span></td></tr>
+      <tr><td>2</td><td><span class="ar">غرفة النوم الرئيسية</span><span class="en">Master Bedroom</span></td><td><span class="ar">سرير دائري 2.5×2.2 متر مع نظام مصراع هيدروليكي</span><span class="en">2.5×2.2 m circular bed with hydraulic shutter system</span></td></tr>
+      <tr><td>3</td><td><span class="ar">المطبخ</span><span class="en">Kitchen</span></td><td><span class="ar">خزان مياه 4×4 متر داخل جدار النافذة مع سخان وفلتر ومعقم مياه — كل شيء مخفي ومنسق</span><span class="en">4×4 m water tank inside window wall with heater, filter &amp; sterilizer — all hidden and coordinated</span></td></tr>
+      <tr><td>4</td><td><span class="ar">الحمام</span><span class="en">Bathroom</span></td><td><span class="ar">نظام القفل الذاتي، جهاز تكرير النفايات كسماد وري زراعي</span><span class="en">Auto-lock system, waste recycling device for fertilizer and irrigation</span></td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">القيمة المضافة والفوائد للعميل</h3><h3 class="en" style="margin-top:32px;">Added Value &amp; Customer Benefits</h3>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">💰 <span class="ar">القيمة المضافة</span><span class="en">Added Value</span></div>
+      <ul class="feature-list">
+        <li><span class="ar"><strong>المنزل:</strong> سعر الغرفة ~10,000 دولار فقط</span><span class="en"><strong>House:</strong> Room price ~$10,000 only</span></li>
+        <li><span class="ar"><strong>المركبة البرمائية:</strong> ~50,000 دولار رغم التقنيات المتقدمة والمولدات الكهربائية الذكية</span><span class="en"><strong>Amphibious Vehicle:</strong> ~$50,000 despite advanced technologies and smart electric generators</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">✅ <span class="ar">فوائد العميل</span><span class="en">Customer Benefits</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">بيئة صحية ومادية متكاملة في أي مكان بالعالم</span><span class="en">Complete healthy environment anywhere in the world</span></li>
+        <li><span class="ar">لا حاجة لخدمات الكهرباء والماء الخارجية</span><span class="en">No need for external electricity or water services</span></li>
+        <li><span class="ar">لا حاجة لشراء أثاث — كل شيء مدمج</span><span class="en">No need to buy furniture — everything is built-in</span></li>
+        <li><span class="ar">سعر منخفض مقارنة بالمحتوى التقني الهائل</span><span class="en">Low price relative to the enormous technological content</span></li>
+        <li><span class="ar">السيارة: قدرات عالية وسلامة عامة بدون وقود أو بطاريات</span><span class="en">Car: high capabilities and safety without fuel or batteries</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-gold" style="margin-top:32px;">
+    <h3>✈️ <span class="ar">الطائرة الشفافة — منتج مستقبلي</span><span class="en">Transparent Aircraft — Future Product</span></h3>
+    <div class="grid-2">
+      <ul class="feature-list">
+        <li><span class="ar">أول طائرة شفافة بالكامل في العالم</span><span class="en">World's first fully transparent aircraft</span></li>
+        <li><span class="ar">محركات نفاثة كهربائية بحجمين مختلفين</span><span class="en">Electric jet engines in two different sizes</span></li>
+        <li><span class="ar">أجنحة متحركة لتسهيل الطيران لمسافات طويلة</span><span class="en">Movable wings for long-distance flight</span></li>
+        <li><span class="ar">نظام مراقبة رباعي كامل لرؤية محيط السماء</span><span class="en">Full 360° surveillance system to see the surrounding sky</span></li>
+      </ul>
+      <ul class="feature-list">
+        <li><span class="ar">تعمل في البحر بمحركات مقاومة للماء والحريق</span><span class="en">Operates at sea with water and fire-resistant engines</span></li>
+        <li><span class="ar">مصنوعة من نفس مواد المنزل (ألومنيوم + بلاستيك معالج)</span><span class="en">Made from same house materials (aluminum + treated plastic)</span></li>
+        <li><span class="ar">مضادة للغرق وجميع العوامل البيئية</span><span class="en">Anti-sinking and resistant to all environmental factors</span></li>
+        <li><span class="ar">مظلة طوارئ مدمجة</span><span class="en">Built-in emergency parachute</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20px;"><div class="card-title">🚗 <span class="ar">سيارة روبوت — المواصفات التفصيلية</span><span class="en">Robot Car — Detailed Specifications</span></div>
+    <div class="grid-2">
+      <ul class="feature-list">
+        <li><span class="ar">عرض: 2.5 متر — طول: 7 أمتار</span><span class="en">Width: 2.5 m — Length: 7 m</span></li>
+        <li><span class="ar">عجلات كروية بنظام دوران أوتوماتيكي</span><span class="en">Spherical wheels with automatic rotation system</span></li>
+        <li><span class="ar">تعمل تلقائياً بدون سائق</span><span class="en">Operates autonomously without a driver</span></li>
+        <li><span class="ar">مضادة للغرق — أرضية مغلقة بالكامل</span><span class="en">Anti-sinking — fully sealed floor</span></li>
+        <li><span class="ar">تكييف بنفس نظام المنزل</span><span class="en">Air conditioning using the same system as the house</span></li>
+        <li><span class="ar">تحمل وزناً يزيد عن 3,000 كيلوغرام</span><span class="en">Carries over 3,000 kg payload</span></li>
+      </ul>
+      <ul class="feature-list">
+        <li><span class="ar">مقاعد تُزال من الأرضية وتُطوى داخلها</span><span class="en">Seats retract from and fold into the floor</span></li>
+        <li><span class="ar">مساحة كبيرة للسفر أو نقل البضائع</span><span class="en">Large space for travel or cargo transport</span></li>
+        <li><span class="ar">نظام هيدروليكي بدون بطاريات وبدون صوت</span><span class="en">Hydraulic system — no batteries, silent operation</span></li>
+        <li><span class="ar">أبواب من 3 طبقات متداخلة</span><span class="en">Doors with 3 interlocking layers</span></li>
+        <li><span class="ar">نظام إضاءة ليزر ثنائي الأبعاد فريد</span><span class="en">Unique 2D laser lighting system</span></li>
+        <li><span class="ar">كاميرات فيديو غير مرئية داخل شعار النسر</span><span class="en">Invisible video cameras inside the eagle logo</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20px;"><div class="card-title">🚂 <span class="ar">القطار — منتج مستقبلي</span><span class="en">Train — Future Product</span></div>
+    <p class="ar">قطار بمقطورات منفصلة تتبع بعضها بنظام ليزر متصل بالمقطورة الرئيسية. يُصنع بنفس طريقة السيارة مع تغيير العجلات فقط بطريقة سهلة وسريعة. مزود بكاميرات تحكم مباشر ونظام إضاءة ليزر فريد.</p>
+    <p class="en">A train with separate carriages following each other via a laser system connected to the main carriage. Manufactured using the same method as the car, with only the wheels changed easily and quickly. Equipped with direct control cameras and a unique laser lighting system.</p>
+  </div>
+  <div class="card" style="margin-top:20px;"><div class="card-title">🧸 <span class="ar">ألعاب الأطفال</span><span class="en">Children's Toys</span></div>
+    <p class="ar">تُستخدم قوالب المصنع لتصنيع ألعاب للأطفال بنفس أشكال المنزل والسيارة والطائرة والقطار بأحجام مناسبة للأطفال. منتج تسويقي استراتيجي يُعزز الوعي بالعلامة التجارية منذ الصغر.</p>
+    <p class="en">Factory molds are used to manufacture children's toys in the same shapes as the house, car, aircraft, and train in child-appropriate sizes. A strategic marketing product that builds brand awareness from an early age.</p>
+  </div>
+</div></section>
+
+<!-- S4: TECHNOLOGY -->
+<section class="section" id="tech"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">4</div><div class="section-title"><span class="ar">تأثير <span>التكنولوجيا</span></span><span class="en">Technology <span>Impact</span></span></div></div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">✅ <span class="ar">آثار إيجابية</span><span class="en">Positive Effects</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">التكنولوجيا تصب في صالح المشروع بالكامل</span><span class="en">Technology works entirely in the project's favor</span></li>
+        <li><span class="ar">المنزل يحتوي على تقنيات غير موجودة حالياً في السوق</span><span class="en">The house contains technologies not currently available in the market</span></li>
+        <li><span class="ar">المشروع سيكون مصدر تكنولوجيا الجيل الجديد</span><span class="en">The project will be the source of next-generation technology</span></li>
+        <li><span class="ar">لم يعمل أحد في العالم على تطوير المباني بهذه التكنولوجيا حتى الآن</span><span class="en">No one in the world has developed buildings with this technology to date</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🛡️ <span class="ar">الحماية من التأثيرات السلبية</span><span class="en">Protection from Negative Effects</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">لا توجد آثار سلبية للتكنولوجيا على المنتجات</span><span class="en">No negative technological effects on the products</span></li>
+        <li><span class="ar">المنزل لن يتأثر بالتكنولوجيا المستقبلية — بل سيكون مصدرها</span><span class="en">The house will not be affected by future technology — it will be its source</span></li>
+        <li><span class="ar">التقنيات المستخدمة تتجاوز ما هو موجود حالياً بمراحل</span><span class="en">Technologies used are far ahead of what currently exists</span></li>
+        <li><span class="ar">الاستفادة من الذكاء الاصطناعي وإنترنت الأشياء لتقديم حلول أكثر ذكاءً</span><span class="en">Leveraging AI and IoT to deliver smarter and more efficient solutions</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- S5: ECONOMY -->
+<section class="section" id="economy"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">5</div><div class="section-title"><span class="ar">اقتصاد <span>البلاد</span></span><span class="en">Country <span>Economy</span></span></div></div>
+  <div class="grid-4">
+    <div class="stat-card"><span class="value">25.8B</span><span class="label ar">الناتج المحلي الإجمالي (دينار)</span><span class="label en">GDP (Jordanian Dinar)</span></div>
+    <div class="stat-card gold"><span class="value">$8,073M</span><span class="label ar">الناتج المحلي (دولار)</span><span class="label en">GDP (USD)</span></div>
+    <div class="stat-card orange"><span class="value">$17.3M</span><span class="label ar">نصيب الفرد من الدخل</span><span class="label en">Per Capita Income</span></div>
+    <div class="stat-card"><span class="value">2.05B</span><span class="label ar">عجز الموازنة المتوقع (دينار)</span><span class="label en">Expected Budget Deficit (JD)</span></div>
+  </div>
+  <div class="grid-2" style="margin-top:24px;">
+    <div class="card"><div class="card-title">📊 <span class="ar">الوضع الاقتصادي العام</span><span class="en">General Economic Situation</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">إجمالي النفقات المقدرة 2021: 9.93 مليار دينار</span><span class="en">Total estimated expenditures 2021: JD 9.93 billion</span></li>
+        <li><span class="ar">تراجع الإيرادات العامة بنحو 553 مليون دينار (7.1%)</span><span class="en">Public revenue decline of ~JD 553 million (7.1%)</span></li>
+        <li><span class="ar">تراجع المنح الخارجية بنحو 63 مليون دينار</span><span class="en">External grants declined by ~JD 63 million</span></li>
+        <li><span class="ar">عجز الموازنة 6.9% من الناتج المحلي الإجمالي</span><span class="en">Budget deficit at 6.9% of GDP</span></li>
+        <li><span class="ar">توقع انخفاض العجز إلى 5.5% خلال 2021</span><span class="en">Deficit expected to decrease to 5.5% of GDP in 2021</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">📈 <span class="ar">التصنيف الائتماني والتوقعات</span><span class="en">Credit Rating &amp; Outlook</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">تصنيف ستاندرد آند بورز: B/B+ (مثبت)</span><span class="en">Standard &amp; Poor's rating: B/B+ (Stable)</span></li>
+        <li><span class="ar">توقع البنك الدولي: نمو 1.8% للاقتصاد الأردني</span><span class="en">World Bank forecast: 1.8% growth for the Jordanian economy</span></li>
+        <li><span class="ar">تراجع النمو الاقتصادي -3.5% بسبب جائحة كوفيد-19</span><span class="en">Economic growth declined -3.5% due to COVID-19 pandemic</span></li>
+        <li><span class="ar">الاقتصاد في مرحلة تعافٍ تدريجي</span><span class="en">Economy in gradual recovery phase</span></li>
+        <li><span class="ar">فرصة استثمارية في ظل الحاجة لحلول سكنية مبتكرة</span><span class="en">Investment opportunity given the need for innovative housing solutions</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- S6: MARKET -->
+<section class="section" id="market"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">6</div><div class="section-title"><span class="ar">سوق <span>المنتجات</span></span><span class="en">Product <span>Market</span></span></div></div>
+  <div class="grid-3">
+    <div class="stat-card green"><span class="value">$250B</span><span class="label ar">حجم سوق المنازل الذكية 2023</span><span class="label en">Smart Home Market Size 2023</span></div>
+    <div class="stat-card gold"><span class="value">$1.6T</span><span class="label ar">المتوقع بحلول 2030</span><span class="label en">Expected by 2030</span></div>
+    <div class="stat-card"><span class="value">16.6%</span><span class="label ar">معدل النمو السنوي المركب 2021–2028</span><span class="label en">CAGR 2021–2028</span></div>
+  </div>
+  <div class="grid-2" style="margin-top:24px;">
+    <div class="card"><div class="card-title">🎯 <span class="ar">الفئة المستهدفة</span><span class="en">Target Audience</span></div>
+      <p class="ar">جميع المجموعات من جميع دول العالم — الغنية والفقيرة على حد سواء:</p>
+      <p class="en">All groups from all countries worldwide — rich and poor alike:</p>
+      <ul class="feature-list">
+        <li><span class="ar">الأفراد: العازبون، العائلات الصغيرة، كبار السن، ذوو الإعاقة</span><span class="en">Individuals: singles, small families, elderly, people with disabilities</span></li>
+        <li><span class="ar">العائلات المكونة من 4–6 أفراد</span><span class="en">Families of 4–6 members</span></li>
+        <li><span class="ar">الشركات الباحثة عن إقامة مؤقتة لموظفيها</span><span class="en">Companies seeking temporary accommodation for employees</span></li>
+        <li><span class="ar">الحكومات الباحثة عن حلول إسكان سريعة وميسورة</span><span class="en">Governments seeking fast and affordable housing solutions</span></li>
+        <li><span class="ar">الجيش والأمن العام</span><span class="en">Military and public security forces</span></li>
+        <li><span class="ar">المناطق المتضررة من الكوارث الطبيعية</span><span class="en">Areas affected by natural disasters</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🏆 <span class="ar">الميزة التنافسية</span><span class="en">Competitive Advantage</span></div>
+      <p class="ar">بناءً على دراسة مستفيضة على مدى 5 سنوات:</p>
+      <p class="en">Based on an extensive 5-year study:</p>
+      <ul class="feature-list">
+        <li><span class="ar"><strong>لا يوجد منافسون مباشرون</strong> — لم يقم أحد بإنشاء هذا المشروع</span><span class="en"><strong>No direct competitors</strong> — no one has created this project</span></li>
+        <li><span class="ar">تقنيات لا مثيل لها في جميع دول العالم</span><span class="en">Technologies unmatched in any country worldwide</span></li>
+        <li><span class="ar">يحمي الأجيال القادمة من حيث الكفاءة والصحة والسلامة</span><span class="en">Protects future generations in terms of efficiency, health, and safety</span></li>
+        <li><span class="ar">أسعار مناسبة مع كفاءة عالية وتقنيات متطورة</span><span class="en">Competitive prices with high efficiency and advanced technologies</span></li>
+        <li><span class="ar">براءات اختراع مختلفة لحماية الابتكارات</span><span class="en">Multiple patents protecting all innovations</span></li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="ar" style="margin-top:32px;">مقارنة أسعار العقارات عالمياً</h3><h3 class="en" style="margin-top:32px;">Global Real Estate Price Comparison</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">البلد</span><span class="en">Country</span></th><th><span class="ar">الموقع</span><span class="en">Location</span></th><th><span class="ar">الحجم</span><span class="en">Size</span></th><th><span class="ar">النوع</span><span class="en">Type</span></th><th><span class="ar">السعر ($)</span><span class="en">Price ($)</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">أمريكا</span><span class="en">USA</span></td><td><span class="ar">نيويورك</span><span class="en">New York</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>1,000,000</td></tr>
+      <tr><td><span class="ar">أمريكا</span><span class="en">USA</span></td><td><span class="ar">سان فرانسيسكو</span><span class="en">San Francisco</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>1,500,000</td></tr>
+      <tr><td><span class="ar">دبي</span><span class="en">Dubai</span></td><td><span class="ar">وسط المدينة</span><span class="en">Downtown</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>500,000</td></tr>
+      <tr><td><span class="ar">دبي</span><span class="en">Dubai</span></td><td><span class="ar">دبي مارينا</span><span class="en">Dubai Marina</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>1,000,000</td></tr>
+      <tr><td><span class="ar">الأردن</span><span class="en">Jordan</span></td><td><span class="ar">عمان</span><span class="en">Amman</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>100,000</td></tr>
+      <tr><td><span class="ar">فرنسا</span><span class="en">France</span></td><td><span class="ar">باريس</span><span class="en">Paris</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>500,000</td></tr>
+      <tr><td><span class="ar">المغرب</span><span class="en">Morocco</span></td><td><span class="ar">مراكش</span><span class="en">Marrakech</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>100,000</td></tr>
+      <tr><td><span class="ar">تركيا</span><span class="en">Turkey</span></td><td><span class="ar">إسطنبول</span><span class="en">Istanbul</span></td><td>1,000 ft²</td><td><span class="ar">شقة</span><span class="en">Apartment</span></td><td>200,000</td></tr>
+      <tr><td style="color:var(--success);font-weight:700;">ROBOT HOUSE</td><td><span class="ar" style="color:var(--success);">أي مكان في العالم</span><span class="en" style="color:var(--success);">Anywhere in the World</span></td><td>20 m²</td><td><span class="ar" style="color:var(--success);">غرفة ذكية متكاملة</span><span class="en" style="color:var(--success);">Integrated Smart Room</span></td><td style="color:var(--success);font-weight:700;">10,000</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- S7: MARKETING -->
+<section class="section" id="marketing"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">7</div><div class="section-title"><span class="ar">استراتيجية <span>التسويق</span></span><span class="en">Marketing <span>Strategy</span></span></div></div>
+  <div class="highlight glow-card">
+    <p style="font-size:1.1rem;font-weight:700;color:var(--accent);" class="ar">"عيش حياة ذكية ومريحة مع ROBOT HOUSE!"</p>
+    <p style="font-size:1.1rem;font-weight:700;color:var(--accent);" class="en">"Live a Smart and Comfortable Life with ROBOT HOUSE!"</p>
+    <p class="ar">استراتيجية تسويقية متعددة القنوات تستهدف جميع الفئات العمرية التي تبحث عن الاستقرار والتخفيف من معاناة الفقر في ظل ظروف كوفيد-19 وتغير المناخ.</p>
+    <p class="en">A multi-channel marketing strategy targeting all age groups seeking stability and relief from poverty amid COVID-19 conditions and climate change.</p>
+  </div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">🎬 <span class="ar">طرق التسويق</span><span class="en">Marketing Methods</span></div>
+      <ul class="feature-list">
+        <li><span class="ar"><strong>فيلم عالمي:</strong> إنتاج فيلم يجمع العرب والأجانب مع المنتج كبطل رئيسي — أرباح إضافية من الفيلم نفسه</span><span class="en"><strong>International Film:</strong> Produce a film featuring Arabs and foreigners with the product as the main star — additional profits from the film itself</span></li>
+        <li><span class="ar"><strong>المحطات الفضائية:</strong> إعلانات على القنوات الفضائية ووسائل التواصل الاجتماعي</span><span class="en"><strong>Satellite Channels:</strong> Advertisements on satellite channels and social media platforms</span></li>
+        <li><span class="ar"><strong>فيديو اختبار المتانة:</strong> عرض المنتج أثناء اختباره ضد الكوارث الطبيعية</span><span class="en"><strong>Durability Test Video:</strong> Showcasing the product during testing against natural disasters</span></li>
+        <li><span class="ar"><strong>ألعاب الأطفال:</strong> تصنيع ألعاب بأشكال المنزل والسيارة والطائرة والقطار</span><span class="en"><strong>Children's Toys:</strong> Manufacturing toys in the shapes of the house, car, aircraft, and train</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">📣 <span class="ar">القنوات التسويقية</span><span class="en">Marketing Channels</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">الإعلان: تلفزيون، إنترنت، وسائل التواصل الاجتماعي</span><span class="en">Advertising: TV, internet, social media</span></li>
+        <li><span class="ar">العلاقات العامة: بناء علاقات مع وسائل الإعلام والمؤثرين</span><span class="en">Public Relations: building relationships with media and influencers</span></li>
+        <li><span class="ar">المعارض التجارية: البناء والعقارات والتكنولوجيا</span><span class="en">Trade Shows: construction, real estate, and technology</span></li>
+        <li><span class="ar">التسويق المباشر: البريد الإلكتروني والبريد العادي</span><span class="en">Direct Marketing: email and direct mail</span></li>
+        <li><span class="ar">التسويق الرقمي: محركات البحث والمحتوى</span><span class="en">Digital Marketing: search engines and content marketing</span></li>
+        <li><span class="ar">النموذج الأول شفاف بالكامل ليرى العميل ما بداخله</span><span class="en">First model fully transparent so customers can see the interior</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20px;"><div class="card-title">🚗 <span class="ar">تسويق السيارة</span><span class="en">Car Marketing</span></div>
+    <ul class="feature-list">
+      <li><span class="ar">تصوير السيارة أثناء السفر على الماء والأرض</span><span class="en">Filming the car while traveling on water and land</span></li>
+      <li><span class="ar">إمكانية تجربة السيارة في المعرض المخصص</span><span class="en">Ability to test-drive the car at the dedicated showroom</span></li>
+      <li><span class="ar">السيارة تذهب بمفردها إلى أي دولة في العالم كإعلان حي</span><span class="en">The car travels autonomously to any country as a live advertisement</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- S8: TEAM -->
+<section class="section" id="team"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">8</div><div class="section-title"><span class="ar">الشركة <span>والموظفون</span></span><span class="en">Company <span>&amp; Employees</span></span></div></div>
+  <h3 class="ar">الأشهر الثلاثة الأولى</h3><h3 class="en">First Three Months</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th><span class="ar">المسمى الوظيفي</span><span class="en">Job Title</span></th><th><span class="ar">العدد</span><span class="en">Count</span></th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="ar">الإدارة</span><span class="en">Management</span></td><td>1</td></tr>
+      <tr><td>2</td><td><span class="ar">مدراء الفروع</span><span class="en">Branch Managers</span></td><td>20</td></tr>
+      <tr><td>3</td><td><span class="ar">خطوط الإنتاج المسؤولة</span><span class="en">Production Line Supervisors</span></td><td>50</td></tr>
+      <tr><td colspan="2" style="font-weight:700;color:var(--accent);"><span class="ar">المجموع</span><span class="en">Total</span></td><td style="font-weight:700;color:var(--accent);">71</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:24px;">الأشهر الستة الأولى</h3><h3 class="en" style="margin-top:24px;">First Six Months</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th><span class="ar">المسمى الوظيفي</span><span class="en">Job Title</span></th><th><span class="ar">العدد</span><span class="en">Count</span></th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="ar">العمال الداخليون</span><span class="en">Internal Workers</span></td><td>400</td></tr>
+      <tr><td>2</td><td><span class="ar">العمال الخارجيون</span><span class="en">External Workers</span></td><td>150</td></tr>
+      <tr><td>3</td><td><span class="ar">مدراء التسويق</span><span class="en">Marketing Managers</span></td><td>25</td></tr>
+      <tr><td colspan="2" style="font-weight:700;color:var(--accent);"><span class="ar">المجموع</span><span class="en">Total</span></td><td style="font-weight:700;color:var(--accent);">575</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:24px;">السنة الأولى</h3><h3 class="en" style="margin-top:24px;">First Year</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th><span class="ar">المسمى الوظيفي</span><span class="en">Job Title</span></th><th><span class="ar">العدد</span><span class="en">Count</span></th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="ar">مسؤولو التوزيع الخارجيون</span><span class="en">External Distribution Officers</span></td><td>30</td></tr>
+      <tr><td>2</td><td><span class="ar">مشرفو الأقسام</span><span class="en">Department Supervisors</span></td><td>200</td></tr>
+      <tr><td>3</td><td><span class="ar">عمال الأمن وعمال الشحن داخل المصنع</span><span class="en">Security &amp; Shipping Workers inside Factory</span></td><td>500</td></tr>
+      <tr><td colspan="2" style="font-weight:700;color:var(--accent);"><span class="ar">المجموع</span><span class="en">Total</span></td><td style="font-weight:700;color:var(--accent);">730</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card" style="margin-top:24px;"><div class="card-title">🏛️ <span class="ar">الهيكل التنظيمي</span><span class="en">Organizational Structure</span></div>
+    <p class="ar">يتكون الهيكل التنظيمي من الأنشطة والمهام الموزعة بين الموظفين داخل الشركة مع عمليات التنسيق والإشراف، موجهاً نحو تحقيق أهداف الشركة. يعكس وجهة نظر الأفراد تجاه منظمتهم والبيئة المحيطة، مع التركيز على الكفاءة التشغيلية والسلامة العامة.</p>
+    <p class="en">The organizational structure consists of activities and tasks distributed among employees within the company, along with coordination and supervision processes, directed toward achieving company goals. It reflects individuals' perspectives toward their organization and surrounding environment, with a focus on operational efficiency and general safety.</p>
+  </div>
+</div></section>
+
+<!-- S9: TIMELINE -->
+<section class="section" id="timeline"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">9</div><div class="section-title"><span class="ar">الجدول <span>الزمني</span></span><span class="en">Implementation <span>Timeline</span></span></div></div>
+  <div class="grid-2">
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-date"><span class="ar">المرحلة 1 — 4 سنوات</span><span class="en">Phase 1 — 4 Years</span></div><div class="timeline-text ar">إنجاز خطة العمل التشغيلية الكاملة</div><div class="timeline-text en">Complete the full operational business plan</div></div>
+      <div class="timeline-item"><div class="timeline-date"><span class="ar">المرحلة 2</span><span class="en">Phase 2</span></div><div class="timeline-text ar">الحصول على التمويل من بنك أو شركة أو مؤسسة</div><div class="timeline-text en">Secure funding from a bank, company, or institution</div></div>
+      <div class="timeline-item"><div class="timeline-date"><span class="ar">المرحلة 3</span><span class="en">Phase 3</span></div><div class="timeline-text ar">بدء التوظيف عند الانتهاء من بناء المصنع</div><div class="timeline-text en">Begin hiring upon factory construction completion</div></div>
+      <div class="timeline-item"><div class="timeline-date"><span class="ar">المرحلة 4 — 4 سنوات</span><span class="en">Phase 4 — 4 Years</span></div><div class="timeline-text ar">الافتتاح التجريبي للمصنع</div><div class="timeline-text en">Trial opening of the factory</div></div>
+      <div class="timeline-item"><div class="timeline-date"><span class="ar">المرحلة 5 — 4 سنوات و6 أشهر</span><span class="en">Phase 5 — 4 Years &amp; 6 Months</span></div><div class="timeline-text ar">الافتتاح النهائي الرسمي</div><div class="timeline-text en">Official final grand opening</div></div>
+    </div>
+    <div class="stat-card" style="display:flex;flex-direction:column;justify-content:center;gap:16px;">
+      <div style="text-align:center;"><span class="value" style="font-size:3rem;color:var(--gold);">5</span><span class="label ar">مراحل تنفيذية</span><span class="label en">Implementation Phases</span></div>
+      <div class="divider"></div>
+      <p class="text-muted ar" style="text-align:center;font-size:13px;">من بدء التخطيط حتى الافتتاح النهائي: 4 سنوات و6 أشهر</p>
+      <p class="text-muted en" style="text-align:center;font-size:13px;">From planning start to final opening: 4 years and 6 months</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- S10: TECHNICAL -->
+<section class="section" id="technical"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">10</div><div class="section-title"><span class="ar">القسم <span>الفني</span></span><span class="en">Technical <span>Section</span></span></div></div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">📍 <span class="ar">موقع المشروع</span><span class="en">Project Location</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">أي بلد — يفضل وسط المدينة بالقرب من دول الجوار</span><span class="en">Any country — preferably city center near neighboring countries</span></li>
+        <li><span class="ar">إمكانية التصدير إلى الدول المجاورة</span><span class="en">Export capability to neighboring countries</span></li>
+        <li><span class="ar">المصنع يُحيي جزءاً كبيراً من المنطقة اقتصادياً</span><span class="en">The factory revitalizes a large portion of the area economically</span></li>
+        <li><span class="ar">أرض المدينة الصناعية: 50 هكتار (500,000 م²)</span><span class="en">Industrial city land: 50 hectares (500,000 m²)</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🏭 <span class="ar">الموردون والمصادر</span><span class="en">Suppliers &amp; Sources</span></div>
+      <div class="table-wrap" style="margin:0;"><table>
+        <thead><tr><th><span class="ar">الموضوع</span><span class="en">Item</span></th><th><span class="ar">المصدر</span><span class="en">Source</span></th><th><span class="ar">العدد</span><span class="en">Qty</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="ar">قوالب الحديد</span><span class="en">Iron Molds</span></td><td><span class="ar">الصين</span><span class="en">China</span></td><td>4</td></tr>
+          <tr><td><span class="ar">الأجهزة الإلكترونية</span><span class="en">Electronic Devices</span></td><td><span class="ar">الصين</span><span class="en">China</span></td><td>1</td></tr>
+          <tr><td><span class="ar">الأسلحة المبرمجة</span><span class="en">Programmed Arms</span></td><td><span class="ar">الصين</span><span class="en">China</span></td><td>2</td></tr>
+          <tr><td><span class="ar">أجهزة تشكيل المعادن</span><span class="en">Metal Forming Machines</span></td><td><span class="ar">الصين</span><span class="en">China</span></td><td>2</td></tr>
+          <tr><td><span class="ar">جهاز حقن البلاستيك وجهاز الضغط الهيدروليكي</span><span class="en">Plastic Injection &amp; Hydraulic Press</span></td><td><span class="ar">الصين</span><span class="en">China</span></td><td>2</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+  <h3 class="ar" style="margin-top:32px;">الأدوات والآلات اللازمة — التكاليف التفصيلية</h3><h3 class="en" style="margin-top:32px;">Required Tools &amp; Machinery — Detailed Costs</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">العدد</span><span class="en">Qty</span></th><th><span class="ar">سعر الوحدة (دينار)</span><span class="en">Unit Price (JD)</span></th><th><span class="ar">سعر الوحدة (دولار)</span><span class="en">Unit Price ($)</span></th><th><span class="ar">الإجمالي (دولار)</span><span class="en">Total ($)</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">شاحنات نقل القوالب (تحمل 1,500 طن)</span><span class="en">Mold Transport Trucks (1,500-ton capacity)</span></td><td>50</td><td>500,000</td><td>705,525</td><td>35,276,270</td></tr>
+      <tr><td><span class="ar">شاحنات نقل المنازل (بذراع روبوتية)</span><span class="en">House Transport Trucks (with robotic arm)</span></td><td>35</td><td>1,000,000</td><td>1,411,052</td><td>49,381,560</td></tr>
+      <tr><td><span class="ar">أرض المدينة الصناعية (50 هكتار)</span><span class="en">Industrial City Land (50 hectares)</span></td><td>—</td><td>6,000,000</td><td>—</td><td>8,466,312</td></tr>
+      <tr><td><span class="ar">قوالب المنازل (8×8 م، وزن 3,000 طن/قالب)</span><span class="en">House Molds (8×8 m, 3,000 tons each)</span></td><td>100</td><td>10,000,000</td><td>14,110,520,000</td><td>1,411,052,000,000</td></tr>
+      <tr><td><span class="ar">مكاتب وأماكن عرض المنتج</span><span class="en">Offices &amp; Product Showrooms</span></td><td>—</td><td>300,000,000</td><td>—</td><td>423,840,000</td></tr>
+    </tbody>
+  </table></div>
+  <div class="highlight-red" style="margin-top:24px;">
+    <h3>⚠️ <span class="ar">تأثير القرارات الحكومية</span><span class="en">Impact of Government Decisions</span></h3>
+    <p class="ar">لا توجد مشكلة — ستكون الشركة ملزمة بدفع جميع المستحقات المطلوبة للدولة من رسوم بلدية وضريبة قيمة مضافة وغيرها. المشروع يهدف إلى إحياء البشرية مما يجعل معارضته أمراً غير مبرر.</p>
+    <p class="en">No issue — the company will be obligated to pay all dues required by the state, including municipal fees, VAT, and others. The project aims to revitalize humanity, making opposition to it unjustifiable.</p>
+  </div>
+</div></section>
+
+<!-- S11: BUSINESS MODEL -->
+<section class="section" id="model"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">11</div><div class="section-title"><span class="ar">نموذج <span>العمل</span></span><span class="en">Business <span>Model</span></span></div></div>
+  <div class="grid-3">
+    <div class="card"><div class="card-title">📦 <span class="ar">طريقة التقديم</span><span class="en">Presentation Method</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">وسائل الإعلام ووسائل التواصل الاجتماعي</span><span class="en">Media and social media platforms</span></li>
+        <li><span class="ar">معرض مخصص — النموذج الأول شفاف بالكامل</span><span class="en">Dedicated showroom — first model fully transparent</span></li>
+        <li><span class="ar">تصوير السيارة أثناء السفر على الماء والأرض</span><span class="en">Filming the car while traveling on water and land</span></li>
+        <li><span class="ar">تجربة السيارة في المعرض المخصص</span><span class="en">Car test-drive at the dedicated showroom</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🚚 <span class="ar">طريقة التوزيع</span><span class="en">Distribution Method</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">مكاتب الشركة في الخارج للمنزل</span><span class="en">Company offices abroad for the house</span></li>
+        <li><span class="ar">شاحنات مخصصة لنقل المنزل وتركيبه</span><span class="en">Dedicated trucks for transporting and installing the house</span></li>
+        <li><span class="ar">السيارة تذهب بمفردها إلى أي دولة</span><span class="en">The car travels autonomously to any country</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">💲 <span class="ar">طريقة التسعير</span><span class="en">Pricing Method</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">المنزل: ~10,000 دولار للغرفة الواحدة</span><span class="en">House: ~$10,000 per room</span></li>
+        <li><span class="ar">السيارة: ~50,000 دولار</span><span class="en">Car: ~$50,000</span></li>
+        <li><span class="ar">المواد ليست باهظة — السعر شامل للتقنية</span><span class="en">Materials are not expensive — price includes technology</span></li>
+        <li><span class="ar">دفعات شهرية ~400 دولار/شهر لـ 4 غرف</span><span class="en">Monthly installments ~$400/month for 4 rooms</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight" style="margin-top:24px;">
+    <h3>🤝 <span class="ar">استراتيجية الأرباح</span><span class="en">Revenue Strategy</span></h3>
+    <p class="ar">إبرام عقود مع الدول بنسبة أرباح مشتركة من خلال بيع المنتج في بلدانها. هذا يساعد البلدين على الاستفادة من التعاقد. الأرباح تشمل: إيرادات المبيعات مطروحاً منها نفقات النقل وأجور العمالة — والربح الصافي أكبر بكثير نسبةً للمواد المستخدمة.</p>
+    <p class="en">Signing contracts with countries on a shared profit basis through selling the product in their territories. This benefits both countries from the partnership. Revenue includes: sales income minus transportation costs and labor wages — with net profit significantly higher relative to material costs.</p>
+  </div>
+</div></section>
+
+<!-- S12: RISKS / SWOT -->
+<section class="section" id="risks"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">12</div><div class="section-title"><span class="ar">عوامل <span>الخطر</span></span><span class="en">Risk <span>Factors</span></span></div></div>
+  <div class="swot-grid">
+    <div class="swot-box swot-s"><div class="swot-label">💪 <span class="ar">نقاط القوة</span><span class="en">Strengths</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">تقنية فريدة من نوعها لا مثيل لها عالمياً</span><span class="en">Unique technology unmatched globally</span></li>
+        <li><span class="ar">إمكانية التكيف مع احتياجات العميل</span><span class="en">Adaptability to customer needs</span></li>
+        <li><span class="ar">كفاءة عالية في استخدام الطاقة المتجددة</span><span class="en">High efficiency in renewable energy use</span></li>
+        <li><span class="ar">سهولة النقل والتركيب في أي مكان</span><span class="en">Easy transport and installation anywhere</span></li>
+        <li><span class="ar">فرص تجارية واسعة في قطاعات متعددة</span><span class="en">Wide commercial opportunities across multiple sectors</span></li>
+        <li><span class="ar">براءات اختراع لحماية الابتكارات</span><span class="en">Patents protecting all innovations</span></li>
+      </ul>
+    </div>
+    <div class="swot-box swot-w"><div class="swot-label">⚠️ <span class="ar">نقاط الضعف</span><span class="en">Weaknesses</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">تكلفة تطوير مرتفعة في المرحلة الأولى</span><span class="en">High development cost in the initial phase</span></li>
+        <li><span class="ar">قد لا يكون لدى بعض المستهلكين خبرة بالتقنيات المتقدمة</span><span class="en">Some consumers may lack experience with advanced technologies</span></li>
+        <li><span class="ar">مخاوف محتملة تتعلق بالخصوصية</span><span class="en">Potential privacy concerns</span></li>
+        <li><span class="ar">صيانة الأنظمة المتقدمة قد تكون معقدة</span><span class="en">Maintenance of advanced systems may be complex</span></li>
+        <li><span class="ar">التقنية لا تزال في مراحلها الأولى</span><span class="en">Technology still in its early stages</span></li>
+      </ul>
+    </div>
+    <div class="swot-box swot-o"><div class="swot-label">🚀 <span class="ar">الفرص</span><span class="en">Opportunities</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">نمو سوق المنازل الذكية العالمي 16.6% سنوياً</span><span class="en">Global smart home market growing 16.6% annually</span></li>
+        <li><span class="ar">تزايد الطلب على حلول الإسكان المستدامة</span><span class="en">Growing demand for sustainable housing solutions</span></li>
+        <li><span class="ar">التطورات في الذكاء الاصطناعي وإنترنت الأشياء</span><span class="en">Advances in AI and IoT</span></li>
+        <li><span class="ar">أزمات الإسكان العالمية تخلق طلباً هائلاً</span><span class="en">Global housing crises create enormous demand</span></li>
+        <li><span class="ar">تغير المناخ يدفع نحو حلول صديقة للبيئة</span><span class="en">Climate change drives demand for eco-friendly solutions</span></li>
+      </ul>
+    </div>
+    <div class="swot-box swot-t"><div class="swot-label">🎯 <span class="ar">التحديات</span><span class="en">Challenges</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">الحصول على التمويل الكافي</span><span class="en">Securing sufficient funding</span></li>
+        <li><span class="ar">الحصول على الموافقات التنظيمية</span><span class="en">Obtaining regulatory approvals</span></li>
+        <li><span class="ar">بناء الوعي بالعلامة التجارية</span><span class="en">Building brand awareness</span></li>
+        <li><span class="ar">التغييرات في القوانين واللوائح</span><span class="en">Changes in laws and regulations</span></li>
+        <li><span class="ar">التغيرات الاقتصادية وتأثيرها على الطلب</span><span class="en">Economic changes and their impact on demand</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid-2" style="margin-top:24px;">
+    <div class="card"><div class="card-title">🏭 <span class="ar">الخصائص الداخلية للشركة</span><span class="en">Internal Company Characteristics</span></div>
+      <p class="ar">الشركة مجهزة داخلياً بتقنية السلامة العامة المتقدمة، حيث تعمل القوالب تلقائياً وبعيداً عن باقي المصنع. تجعل الشركة كل ما هو ضروري للمنزل بعناية وأمان.</p>
+      <p class="en">The company is internally equipped with advanced general safety technology, where molds operate automatically and separately from the rest of the factory. The company manufactures everything necessary for the house with care and safety.</p>
+    </div>
+    <div class="card"><div class="card-title">🌍 <span class="ar">الخصائص الخارجية للسوق</span><span class="en">External Market Characteristics</span></div>
+      <p class="ar">في حالة وجود عجز في السوق، سيتم تزويد المنزل بدفعات شهرية (~400 دولار/شهر لـ 4 غرف). التنمية الاقتصادية لجميع البلدان من حيث توفير الطاقة وتقليل انبعاثات الكربون. المنزل صديق للبيئة 100%.</p>
+      <p class="en">In case of market deficit, the house will be provided with monthly installments (~$400/month for 4 rooms). Economic development for all countries in terms of energy provision and carbon emission reduction. The house is 100% eco-friendly.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- S13: CAPACITY -->
+<section class="section" id="capacity"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">13</div><div class="section-title"><span class="ar">القدرة <span>التنفيذية</span></span><span class="en">Executive <span>Capacity</span></span></div></div>
+  <div class="grid-3">
+    <div class="stat-card green"><span class="value">✓</span><span class="label ar">المهارات الكافية لتنفيذ المشروع</span><span class="label en">Sufficient Skills to Execute the Project</span></div>
+    <div class="stat-card green"><span class="value">✓</span><span class="label ar">توفير المواد والأدوات اللازمة</span><span class="label en">Providing Required Materials &amp; Tools</span></div>
+    <div class="stat-card green"><span class="value">✓</span><span class="label ar">الخبرة الكافية لإنجاز المشروع</span><span class="label en">Sufficient Experience to Complete the Project</span></div>
+  </div>
+  <div class="highlight" style="margin-top:24px;">
+    <p class="ar">المشروع قابل للتطبيق ضمن عمل جماعي دولي مشترك ضمن اتفاقية عمل دولية بين الأردن والصين، بمساعدة مهندسين تقنيين متخصصين.</p>
+    <p class="en">The project is feasible within a joint international collaborative effort under an international work agreement between Jordan and China, with the assistance of specialized technical engineers.</p>
+  </div>
+</div></section>
+
+<!-- S14: FINANCIAL -->
+<section class="section" id="financial"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">14</div><div class="section-title"><span class="ar">التوقعات <span>المالية</span></span><span class="en">Financial <span>Projections</span></span></div></div>
+  <div class="highlight-gold">
+    <p class="ar"><strong>ملاحظة:</strong> الأرقام التالية تخص <strong>المنزل فقط</strong> (غرفة واحدة بسعر 10,000 دولار) ولا تشمل أرباح السيارة والطائرة والقطار وألعاب الأطفال.</p>
+    <p class="en"><strong>Note:</strong> The following figures relate to <strong>the house only</strong> (one room at $10,000) and do not include profits from the car, aircraft, train, or children's toys.</p>
+  </div>
+  <h3 class="ar" style="margin-top:24px;">قائمة الدخل</h3><h3 class="en" style="margin-top:24px;">Income Statement</h3>
+  <div class="table-wrap"><table class="fin-table">
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">السنة الأولى</span><span class="en">Year 1</span></th><th><span class="ar">السنة الثانية</span><span class="en">Year 2</span></th><th><span class="ar">السنة الثالثة</span><span class="en">Year 3</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">المبيعات (وحدة)</span><span class="en">Sales (units)</span></td><td>1,000</td><td>100,000</td><td>250,000</td></tr>
+      <tr><td><span class="ar">تكلفة المبيعات ($)</span><span class="en">Cost of Sales ($)</span></td><td>500,000</td><td>500,000,000</td><td>1,250,000,000</td></tr>
+      <tr><td><span class="ar">صافي المبيعات ($)</span><span class="en">Net Sales ($)</span></td><td>10,000,000</td><td>1,000,000,000</td><td>2,500,000,000</td></tr>
+      <tr><td><span class="ar">المصاريف الإدارية والتسويقية ($)</span><span class="en">Admin &amp; Marketing Expenses ($)</span></td><td>8,400,000</td><td>8,400,000</td><td>20,200,000</td></tr>
+      <tr><td><span class="ar">الربح التشغيلي ($)</span><span class="en">Operating Profit ($)</span></td><td>1,100,000</td><td>491,600,000</td><td>1,229,800,000</td></tr>
+      <tr><td><span class="ar">الضريبة ($)</span><span class="en">Tax ($)</span></td><td>22,000</td><td>11,432,000</td><td>65,304,000</td></tr>
+      <tr><td class="fin-highlight"><span class="ar">صافي الربح الإجمالي ($)</span><span class="en">Total Net Profit ($)</span></td><td colspan="3" class="fin-highlight" style="text-align:center;font-size:1.1rem;">1,704,515,600</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">قائمة التدفقات النقدية</h3><h3 class="en" style="margin-top:32px;">Cash Flow Statement</h3>
+  <div class="table-wrap"><table class="fin-table">
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">السنة الأولى</span><span class="en">Year 1</span></th><th><span class="ar">السنة الثانية</span><span class="en">Year 2</span></th><th><span class="ar">السنة الثالثة</span><span class="en">Year 3</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">التدفقات النقدية من الأنشطة التشغيلية ($)</span><span class="en">Cash Flows from Operating Activities ($)</span></td><td>1,078,000</td><td>480,168,000</td><td>1,223,269,600</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid-3" style="margin-top:32px;">
+    <div class="stat-card green"><span class="value ar">6 أشهر</span><span class="value en">6 Months</span><span class="label ar">نقطة التعادل — بعد افتتاح المصنع</span><span class="label en">Break-Even — After Factory Opening</span></div>
+    <div class="stat-card gold"><span class="value">$1B</span><span class="label ar">عائد بيع 100,000 غرفة عالمياً</span><span class="label en">Return from 100,000 Rooms Globally</span></div>
+    <div class="stat-card"><span class="value">$400M</span><span class="label ar">صافي ربح تقريبي بعد السنة الأولى</span><span class="label en">Approx. Net Profit After Year 1</span></div>
+  </div>
+  <h3 class="ar" style="margin-top:32px;">التكاليف التشغيلية السنوية</h3><h3 class="en" style="margin-top:32px;">Annual Operating Costs</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">بالدينار الأردني</span><span class="en">Jordanian Dinar</span></th><th><span class="ar">بالدولار الأمريكي</span><span class="en">US Dollar</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">الرواتب</span><span class="en">Salaries</span></td><td>50,000,000</td><td>7,055,254</td></tr>
+      <tr><td><span class="ar">الإيجار</span><span class="en">Rent</span></td><td>10,000,000</td><td>1,411,051</td></tr>
+      <tr><td><span class="ar">خدمات المرافق</span><span class="en">Utility Services</span></td><td>5,000,000</td><td>705,525</td></tr>
+      <tr><td><span class="ar">المواد الخام</span><span class="en">Raw Materials</span></td><td>200,000,000</td><td>28,221,040</td></tr>
+      <tr><td><span class="ar">التسويق والإعلان</span><span class="en">Marketing &amp; Advertising</span></td><td>20,000,000</td><td>2,822,104</td></tr>
+      <tr><td><span class="ar">الصيانة والإصلاح</span><span class="en">Maintenance &amp; Repair</span></td><td>10,000,000</td><td>1,411,051</td></tr>
+      <tr><td><span class="ar">نفقات أخرى</span><span class="en">Other Expenses</span></td><td>10,000,000</td><td>1,411,051</td></tr>
+      <tr><td style="font-weight:700;color:var(--gold);"><span class="ar">المجموع</span><span class="en">Total</span></td><td style="font-weight:700;color:var(--gold);">310,000,000</td><td style="font-weight:700;color:var(--gold);">43,722,054</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">تحليل الجدوى المالية — ROI و NPV</h3><h3 class="en" style="margin-top:32px;">Financial Feasibility — ROI &amp; NPV</h3>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">📊 <span class="ar">حساب عائد الاستثمار ROI</span><span class="en">Return on Investment (ROI)</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">سعر بيع الغرفة: <strong>10,000 دولار</strong></span><span class="en">Room selling price: <strong>$10,000</strong></span></li>
+        <li><span class="ar">تكلفة تصنيع الغرفة: <strong>6,000 دولار</strong></span><span class="en">Room manufacturing cost: <strong>$6,000</strong></span></li>
+        <li><span class="ar">صافي الربح للغرفة: <strong style="color:var(--success);">4,000 دولار</strong></span><span class="en">Net profit per room: <strong style="color:var(--success);">$4,000</strong></span></li>
+        <li><span class="ar">هامش الربح: <strong style="color:var(--success);">40%</strong></span><span class="en">Profit margin: <strong style="color:var(--success);">40%</strong></span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">📈 <span class="ar">حساب صافي القيمة الحالية NPV</span><span class="en">Net Present Value (NPV)</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">معدل الخصم: 5%</span><span class="en">Discount rate: 5%</span></li>
+        <li><span class="ar">عمر المشروع: 10 سنوات</span><span class="en">Project lifespan: 10 years</span></li>
+        <li><span class="ar">NPV = <strong style="color:var(--success);">29,742 دولار</strong> (لكل غرفة)</span><span class="en">NPV = <strong style="color:var(--success);">$29,742</strong> (per room)</span></li>
+        <li><span class="ar">المشروع قابل للجدوى مالياً بشكل واضح</span><span class="en">The project is clearly financially viable</span></li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="ar" style="margin-top:32px;">تحليل الحساسية</h3><h3 class="en" style="margin-top:32px;">Sensitivity Analysis</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">السيناريو</span><span class="en">Scenario</span></th><th>NPV ($)</th><th><span class="ar">التغيير</span><span class="en">Change</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">السيناريو الأساسي</span><span class="en">Base Scenario</span></td><td>19,028,579</td><td>—</td></tr>
+      <tr><td><span class="ar">سعر بيع أعلى بـ 10%</span><span class="en">Selling price +10%</span></td><td>25,542,884</td><td style="color:var(--success);">+34%</td></tr>
+      <tr><td><span class="ar">سعر بيع أقل بـ 10%</span><span class="en">Selling price -10%</span></td><td>12,514,274</td><td style="color:var(--warning);">-34%</td></tr>
+      <tr><td><span class="ar">مبيعات أعلى بـ 20%</span><span class="en">Sales volume +20%</span></td><td>28,188,775</td><td style="color:var(--success);">+48%</td></tr>
+      <tr><td><span class="ar">مبيعات أقل بـ 20%</span><span class="en">Sales volume -20%</span></td><td>15,868,383</td><td style="color:var(--warning);">-18%</td></tr>
+      <tr><td><span class="ar">معدل نمو 5%</span><span class="en">Growth rate 5%</span></td><td>27,201,898</td><td style="color:var(--success);">+43%</td></tr>
+      <tr><td><span class="ar">معدل نمو 0%</span><span class="en">Growth rate 0%</span></td><td>10,855,261</td><td style="color:var(--warning);">-43%</td></tr>
+      <tr><td style="color:var(--gold);font-weight:700;"><span class="ar">أفضل سيناريو</span><span class="en">Best Scenario</span></td><td style="color:var(--gold);font-weight:700;">34,441,234</td><td style="color:var(--success);">+81%</td></tr>
+      <tr><td style="color:var(--warning);"><span class="ar">أسوأ سيناريو</span><span class="en">Worst Scenario</span></td><td style="color:var(--warning);">8,215,923</td><td style="color:var(--warning);">-57%</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">تحليل ربحية السيارة البرمائية</h3><h3 class="en" style="margin-top:32px;">Amphibious Car Profitability</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">القيمة</span><span class="en">Value</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">سعر البيع</span><span class="en">Selling Price</span></td><td>$50,000</td></tr>
+      <tr><td><span class="ar">تكلفة الإنتاج</span><span class="en">Production Cost</span></td><td>$30,000</td></tr>
+      <tr><td><span class="ar">هامش الربح للوحدة</span><span class="en">Profit Margin per Unit</span></td><td style="color:var(--success);">$20,000 (40%)</td></tr>
+      <tr><td><span class="ar">الربح من 1,000 وحدة</span><span class="en">Profit from 1,000 Units</span></td><td style="color:var(--success);">$20,000,000</td></tr>
+      <tr><td><span class="ar">نقطة التعادل</span><span class="en">Break-Even Point</span></td><td>500 <span class="ar">وحدة</span><span class="en">units</span></td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="ar" style="margin-top:32px;">تحليل ربحية ألعاب الأطفال</h3><h3 class="en" style="margin-top:32px;">Children's Toys Profitability</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">البند</span><span class="en">Item</span></th><th><span class="ar">القيمة</span><span class="en">Value</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">سعر البيع للعبة</span><span class="en">Toy Selling Price</span></td><td>$60</td></tr>
+      <tr><td><span class="ar">تكلفة الإنتاج</span><span class="en">Production Cost</span></td><td>$20</td></tr>
+      <tr><td><span class="ar">التكاليف الثابتة</span><span class="en">Fixed Costs</span></td><td>$20</td></tr>
+      <tr><td><span class="ar">هامش الربح</span><span class="en">Profit Margin</span></td><td style="color:var(--success);">$40 (33%)</td></tr>
+      <tr><td><span class="ar">الربح من 5,000 وحدة</span><span class="en">Profit from 5,000 Units</span></td><td style="color:var(--success);">$180,000</td></tr>
+      <tr><td><span class="ar">نقطة التعادل</span><span class="en">Break-Even Point</span></td><td>500 <span class="ar">وحدة</span><span class="en">units</span></td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- S15: CAPITAL -->
+<section class="section" id="capital"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">15</div><div class="section-title"><span class="ar">رأس المال <span>والاستراتيجية</span></span><span class="en">Capital <span>&amp; Strategy</span></span></div></div>
+  <div class="highlight-gold">
+    <h3>💰 <span class="ar">المبلغ الإجمالي المطلوب</span><span class="en">Total Required Amount</span></h3>
+    <div class="grid-2">
+      <div style="text-align:center;padding:20px;"><div style="font-size:2rem;font-weight:800;color:var(--gold);">2,000,000,000</div><div style="color:var(--muted);font-size:14px;" class="ar">مليار دينار أردني</div><div style="color:var(--muted);font-size:14px;" class="en">Billion Jordanian Dinars</div></div>
+      <div style="text-align:center;padding:20px;"><div style="font-size:2rem;font-weight:800;color:var(--accent);">282,210,400,000</div><div style="color:var(--muted);font-size:14px;" class="ar">دولار أمريكي</div><div style="color:var(--muted);font-size:14px;" class="en">US Dollars</div></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:24px;"><div class="card-title">🏦 <span class="ar">استراتيجية ضمان سداد القرض</span><span class="en">Loan Repayment Guarantee Strategy</span></div>
+    <p class="ar">لضمان سداد القرض، يُقترح وضع <strong>50% من مبلغ القرض في شهادة الادخار</strong> كضمان للبنك. أي عمولة مرتبطة بشهادة الادخار تُحوَّل تلقائياً إلى ممول المشروع، مما يعزز الاستقرار المالي للقرض ويوفر آلية فعالة لإدارة دفع العمولة.</p>
+    <p class="en">To guarantee loan repayment, it is proposed to place <strong>50% of the loan amount in a savings certificate</strong> as bank collateral. Any commission associated with the savings certificate is automatically transferred to the project financier, enhancing the loan's financial stability and providing an effective commission payment management mechanism.</p>
+    <div class="divider"></div>
+    <p class="ar">الهدف: تسريع عملية القرض وتسهيل الوصول الفوري إلى الأموال اللازمة.</p>
+    <p class="en">Goal: Accelerate the loan process and facilitate immediate access to the required funds.</p>
+  </div>
+  <h3 class="ar" style="margin-top:24px;">مصادر التمويل المقترحة</h3><h3 class="en" style="margin-top:24px;">Proposed Funding Sources</h3>
+  <div class="grid-3">
+    <div class="card"><div class="card-title">🏛️ <span class="ar">قروض بنكية</span><span class="en">Bank Loans</span></div><p class="ar">التمويل الرئيسي عبر البنوك مع ضمان شهادة الادخار</p><p class="en">Primary financing through banks with savings certificate collateral</p></div>
+    <div class="card"><div class="card-title">💼 <span class="ar">شركات رأس المال الاستثماري</span><span class="en">Venture Capital</span></div><p class="ar">شراكات استراتيجية مع مستثمرين دوليين</p><p class="en">Strategic partnerships with international investors</p></div>
+    <div class="card"><div class="card-title">🤝 <span class="ar">عقود الدول</span><span class="en">State Contracts</span></div><p class="ar">إبرام عقود مع الدول بنسبة أرباح مشتركة</p><p class="en">Signing contracts with countries on a shared profit basis</p></div>
+  </div>
+</div></section>
+
+<!-- S16: FULL ANALYSIS -->
+<section class="section" id="analysis"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">16</div><div class="section-title"><span class="ar">التحليل <span>الشامل</span></span><span class="en">Comprehensive <span>Analysis</span></span></div></div>
+  <h3 class="ar">مقارنة ROBOT HOUSE بالمنازل التقليدية</h3><h3 class="en">ROBOT HOUSE vs. Traditional Homes</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">الميزة</span><span class="en">Feature</span></th><th>ROBOT HOUSE</th><th><span class="ar">المنازل التقليدية</span><span class="en">Traditional Homes</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">كفاءة استخدام الطاقة</span><span class="en">Energy Efficiency</span></td><td style="color:var(--success);"><span class="ar">عالية جداً</span><span class="en">Very High</span></td><td style="color:var(--warning);"><span class="ar">متوسطة إلى منخفضة</span><span class="en">Medium to Low</span></td></tr>
+      <tr><td><span class="ar">استدامة المواد</span><span class="en">Material Sustainability</span></td><td style="color:var(--success);"><span class="ar">عالية</span><span class="en">High</span></td><td style="color:var(--warning);"><span class="ar">متوسطة إلى منخفضة</span><span class="en">Medium to Low</span></td></tr>
+      <tr><td><span class="ar">التخصيص</span><span class="en">Customization</span></td><td style="color:var(--success);"><span class="ar">مرتفع جداً</span><span class="en">Very High</span></td><td style="color:var(--warning);"><span class="ar">منخفض</span><span class="en">Low</span></td></tr>
+      <tr><td><span class="ar">الأتمتة المنزلية</span><span class="en">Home Automation</span></td><td style="color:var(--success);"><span class="ar">مرتفع جداً</span><span class="en">Very High</span></td><td style="color:var(--warning);"><span class="ar">منخفض</span><span class="en">Low</span></td></tr>
+      <tr><td><span class="ar">تحسينات السلامة</span><span class="en">Safety Enhancements</span></td><td style="color:var(--success);"><span class="ar">مرتفع جداً</span><span class="en">Very High</span></td><td style="color:var(--warning);"><span class="ar">منخفض</span><span class="en">Low</span></td></tr>
+      <tr><td><span class="ar">التكلفة الأولية</span><span class="en">Initial Cost</span></td><td style="color:var(--gold);"><span class="ar">تنافسية</span><span class="en">Competitive</span></td><td style="color:var(--success);"><span class="ar">منخفضة</span><span class="en">Low</span></td></tr>
+      <tr><td><span class="ar">وقت البناء</span><span class="en">Construction Time</span></td><td style="color:var(--success);"><span class="ar">أسرع بكثير</span><span class="en">Much Faster</span></td><td style="color:var(--warning);"><span class="ar">أبطأ</span><span class="en">Slower</span></td></tr>
+      <tr><td><span class="ar">سهولة النقل</span><span class="en">Portability</span></td><td style="color:var(--success);"><span class="ar">ممتازة</span><span class="en">Excellent</span></td><td style="color:var(--warning);"><span class="ar">مستحيلة</span><span class="en">Impossible</span></td></tr>
+      <tr><td><span class="ar">الاستقلالية عن الشبكات</span><span class="en">Grid Independence</span></td><td style="color:var(--success);"><span class="ar">كاملة</span><span class="en">Complete</span></td><td style="color:var(--warning);"><span class="ar">معتمدة على البنية التحتية</span><span class="en">Infrastructure-Dependent</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid-2" style="margin-top:32px;">
+    <div class="card"><div class="card-title">🏢 <span class="ar">المنافسون المحتملون</span><span class="en">Potential Competitors</span></div>
+      <ul class="feature-list">
+        <li><span class="ar"><strong>Cube House:</strong> منزل متنقل بجدران قابلة للتمدد — بدون أتمتة متقدمة</span><span class="en"><strong>Cube House:</strong> Mobile home with expandable walls — without advanced automation</span></li>
+        <li><span class="ar"><strong>Suzuki Jihouse:</strong> منازل ذكية جاهزة — أقل قابلية للتكيف</span><span class="en"><strong>Suzuki Jihouse:</strong> Ready-made smart homes — less adaptable</span></li>
+        <li><span class="ar"><strong>Tatami Innovations:</strong> جدران متحركة فقط — لا يشمل كل ميزات ROBOT HOUSE</span><span class="en"><strong>Tatami Innovations:</strong> Movable walls only — does not include all ROBOT HOUSE features</span></li>
+        <li><span class="ar"><strong>IKEA:</strong> منازل جاهزة بأسعار معقولة — بدون تقنيات متقدمة</span><span class="en"><strong>IKEA:</strong> Ready-made homes at reasonable prices — without advanced technologies</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🔬 <span class="ar">المواد والتقنيات المتقدمة</span><span class="en">Advanced Materials &amp; Technologies</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">الألومنيوم: خفيف، متين، مقاوم للتآكل</span><span class="en">Aluminum: lightweight, durable, corrosion-resistant</span></li>
+        <li><span class="ar">البلاستيك المعالج: متين، مقاوم للحرائق والرصاص</span><span class="en">Treated plastic: durable, fire and bullet-resistant</span></li>
+        <li><span class="ar">تقنية النانو: لتغيير اللون والخصائص السطحية</span><span class="en">Nano-technology: for color change and surface property modification</span></li>
+        <li><span class="ar">مركبات الجرافين: لتعزيز الخصائص الكهربائية والحرارية</span><span class="en">Graphene compounds: to enhance electrical and thermal properties</span></li>
+        <li><span class="ar">الذكاء الاصطناعي وإنترنت الأشياء للتحكم الذكي</span><span class="en">AI and IoT for smart control</span></li>
+        <li><span class="ar">الطباعة ثلاثية الأبعاد لبناء مكونات معقدة</span><span class="en">3D Printing for building complex components</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- S17: ENVIRONMENT -->
+<section class="section" id="env"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">17</div><div class="section-title"><span class="ar">التأثير <span>البيئي</span></span><span class="en">Environmental <span>Impact</span></span></div></div>
+  <div class="highlight"><p style="font-size:1.1rem;font-weight:700;color:var(--success);" class="ar">المنزل صديق للبيئة 100% — يساهم في التخفيف من ظاهرة الاحتباس الحراري</p><p style="font-size:1.1rem;font-weight:700;color:var(--success);" class="en">The house is 100% eco-friendly — contributes to mitigating global warming</p></div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">🌱 <span class="ar">المزايا البيئية</span><span class="en">Environmental Advantages</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">كفاءة عالية في استخدام الطاقة الشمسية المتجددة</span><span class="en">High efficiency in using renewable solar energy</span></li>
+        <li><span class="ar">مواد بناء صديقة للبيئة وقابلة لإعادة التدوير</span><span class="en">Eco-friendly and recyclable building materials</span></li>
+        <li><span class="ar">تقليل البصمة الكربونية للأفراد والعائلات</span><span class="en">Reducing the carbon footprint of individuals and families</span></li>
+        <li><span class="ar">تحويل مخلفات الحمام إلى سماد زراعي</span><span class="en">Converting bathroom waste into agricultural fertilizer</span></li>
+        <li><span class="ar">تحويل مياه الصرف إلى مياه ري زراعي</span><span class="en">Converting sewage water into agricultural irrigation water</span></li>
+        <li><span class="ar">لا انبعاثات من السيارة (نظام هيدروليكي)</span><span class="en">Zero emissions from the car (hydraulic system)</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">⚠️ <span class="ar">التأثيرات المحتملة وخطط التخفيف</span><span class="en">Potential Impacts &amp; Mitigation Plans</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">استهلاك الطاقة في التصنيع → استخدام مصادر متجددة</span><span class="en">Manufacturing energy consumption → use renewable sources</span></li>
+        <li><span class="ar">استخدام المواد الخام → مواد معاد تدويرها</span><span class="en">Raw material use → recycled materials</span></li>
+        <li><span class="ar">نفايات البناء → إعادة التدوير والتسميد</span><span class="en">Construction waste → recycling and composting</span></li>
+        <li><span class="ar">ممارسات البناء المستدامة في جميع المراحل</span><span class="en">Sustainable construction practices at all stages</span></li>
+        <li><span class="ar">استعادة المواقع وإعادة زراعتها</span><span class="en">Site restoration and replanting</span></li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="ar" style="margin-top:24px;">خطة مراقبة التأثيرات البيئية</h3><h3 class="en" style="margin-top:24px;">Environmental Impact Monitoring Plan</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th><span class="ar">المؤشر</span><span class="en">Indicator</span></th><th><span class="ar">الطريقة</span><span class="en">Method</span></th><th><span class="ar">التردد</span><span class="en">Frequency</span></th><th><span class="ar">المسؤولية</span><span class="en">Responsibility</span></th><th><span class="ar">الإجراءات التصحيحية</span><span class="en">Corrective Actions</span></th></tr></thead>
+    <tbody>
+      <tr><td><span class="ar">جودة الهواء</span><span class="en">Air Quality</span></td><td><span class="ar">أجهزة مراقبة</span><span class="en">Monitoring devices</span></td><td><span class="ar">يومياً</span><span class="en">Daily</span></td><td><span class="ar">فريق البيئة</span><span class="en">Environment Team</span></td><td><span class="ar">تقليل انبعاثات الغبار والدخان</span><span class="en">Reduce dust and smoke emissions</span></td></tr>
+      <tr><td><span class="ar">استهلاك المياه</span><span class="en">Water Consumption</span></td><td><span class="ar">عدادات المياه</span><span class="en">Water meters</span></td><td><span class="ar">شهرياً</span><span class="en">Monthly</span></td><td><span class="ar">فريق البناء</span><span class="en">Construction Team</span></td><td><span class="ar">تقنيات كفاءة استخدام المياه</span><span class="en">Water efficiency technologies</span></td></tr>
+      <tr><td><span class="ar">النفايات</span><span class="en">Waste</span></td><td><span class="ar">سجلات النفايات</span><span class="en">Waste records</span></td><td><span class="ar">أسبوعياً</span><span class="en">Weekly</span></td><td><span class="ar">فريق النفايات</span><span class="en">Waste Team</span></td><td><span class="ar">إعادة التدوير والتسميد</span><span class="en">Recycling and composting</span></td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- S18: SOCIAL -->
+<section class="section" id="social"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">18</div><div class="section-title"><span class="ar">الدراسة <span>الاجتماعية والإدارية</span></span><span class="en">Social &amp; <span>Administrative Study</span></span></div></div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">👥 <span class="ar">التأثيرات الاجتماعية والاقتصادية</span><span class="en">Social &amp; Economic Impacts</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">خلق فرص عمل مباشرة وغير مباشرة</span><span class="en">Creating direct and indirect employment opportunities</span></li>
+        <li><span class="ar">تحسين جودة حياة السكان المحليين</span><span class="en">Improving quality of life for local residents</span></li>
+        <li><span class="ar">تعزيز الاقتصاد المحلي والإقليمي</span><span class="en">Strengthening local and regional economy</span></li>
+        <li><span class="ar">توفير حلول إسكان ميسورة للفئات المحتاجة</span><span class="en">Providing affordable housing solutions for those in need</span></li>
+        <li><span class="ar">تقليل الفقر من خلال توفير مسكن بأسعار معقولة</span><span class="en">Reducing poverty by providing reasonably priced housing</span></li>
+      </ul>
+    </div>
+    <div class="card"><div class="card-title">🏛️ <span class="ar">دراسة الجدوى الإدارية</span><span class="en">Administrative Feasibility Study</span></div>
+      <ul class="feature-list">
+        <li><span class="ar">هيكل تنظيمي واضح مع أدوار ومسؤوليات محددة</span><span class="en">Clear organizational structure with defined roles and responsibilities</span></li>
+        <li><span class="ar">خطة عمل بأهداف SMART قابلة للقياس</span><span class="en">Business plan with measurable SMART objectives</span></li>
+        <li><span class="ar">إدارة المخاطر وخطط الطوارئ</span><span class="en">Risk management and contingency plans</span></li>
+        <li><span class="ar">إدارة الجودة وضمان المعايير</span><span class="en">Quality management and standards assurance</span></li>
+        <li><span class="ar">استراتيجية تواصل فعالة مع أصحاب المصلحة</span><span class="en">Effective communication strategy with stakeholders</span></li>
+        <li><span class="ar">اتفاقية عمل دولية بين الأردن والصين</span><span class="en">International work agreement between Jordan and China</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20px;"><div class="card-title">📊 <span class="ar">ملخص الهوامش الربحية لجميع المنتجات</span><span class="en">Profit Margin Summary for All Products</span></div>
+    <div class="grid-3">
+      <div style="text-align:center;padding:16px;"><div style="font-size:1.5rem;font-weight:800;color:var(--success);">40%</div><div style="font-size:12px;color:var(--muted);" class="ar">هامش ربح المنزل</div><div style="font-size:12px;color:var(--muted);" class="en">House Profit Margin</div></div>
+      <div style="text-align:center;padding:16px;"><div style="font-size:1.5rem;font-weight:800;color:var(--gold);">40%</div><div style="font-size:12px;color:var(--muted);" class="ar">هامش ربح السيارة</div><div style="font-size:12px;color:var(--muted);" class="en">Car Profit Margin</div></div>
+      <div style="text-align:center;padding:16px;"><div style="font-size:1.5rem;font-weight:800;color:var(--accent);">33%</div><div style="font-size:12px;color:var(--muted);" class="ar">هامش ربح الألعاب</div><div style="font-size:12px;color:var(--muted);" class="en">Toys Profit Margin</div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- S19: IMPORTANT NOTE -->
+<section class="section" id="note"><div class="holo-grid"></div><div class="container">
+  <div class="section-header"><div class="section-num">19</div><div class="section-title"><span class="ar">ملاحظة <span>هامة</span></span><span class="en">Important <span>Note</span></span></div></div>
+  <div class="highlight-gold">
+    <h3>📌 <span class="ar">قابلية التطبيق</span><span class="en">Feasibility &amp; Applicability</span></h3>
+    <p class="ar">المشروع قابل للتطبيق على أرض الواقع بعد إجراء الكثير من الاتفاقيات مع المصانع التي ستقوم بتصنيع القوالب.</p>
+    <p class="en">The project is applicable in reality after concluding numerous agreements with factories that will manufacture the molds.</p>
+    <div class="divider"></div>
+    <p class="ar"><strong>الأرباح والأرقام المذكورة هي أرباح من المنزل فقط</strong> ولم تشمل أرباح السيارة والطائرة والقطار وألعاب الأطفال.</p>
+    <p class="en"><strong>The profits and figures mentioned are from the house only</strong> and do not include profits from the car, aircraft, train, or children's toys.</p>
+    <div class="divider"></div>
+    <p class="ar">أسعار تكلفة التصنيع لكل غرفة تعادل بما يقارب <strong>6,000 دولار</strong> كحد أقصى مع جميع التكنولوجيا المتوفرة بداخلها، وسعر البيع <strong>10,000 دولار</strong> — أي أن نسبة الأرباح أعلى بكثير مما ذكر. إنها دراسة موجزة.</p>
+    <p class="en">The manufacturing cost per room is approximately <strong>$6,000</strong> at maximum with all included technologies, and the selling price is <strong>$10,000</strong> — meaning the profit ratio is much higher than stated. This is a summary study.</p>
+  </div>
+  <div class="highlight-red" style="margin-top:24px;">
+    <h3>⚖️ <span class="ar">حماية الملكية الفكرية</span><span class="en">Intellectual Property Protection</span></h3>
+    <p class="ar">حصلنا على براءات اختراع مختلفة لحماية ابتكاراتنا. من غير القانوني وغير الأخلاقي لأي شخص استخدام أو إعادة إنتاج أفكارنا دون إذن منا. نحن نأخذ هذه الأمور على محمل الجد ولن نتردد في اتخاذ الإجراءات القانونية ضد أي انتهاك. نحث الجميع على احترام ملكيتنا الفكرية ودعمنا في مهمتنا لإحداث ثورة في صناعة البناء باستخدام التكنولوجيا المستدامة والمتطورة.</p>
+    <p class="en">We have obtained various patents to protect our innovations. It is illegal and unethical for anyone to use or reproduce our ideas without our permission. We take these matters seriously and will not hesitate to take legal action against any violation. We urge everyone to respect our intellectual property and support us in our mission to revolutionize the construction industry using sustainable and advanced technology.</p>
+  </div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">ROBOT HOUSE</div>
+  <div class="footer-name ar">محمد داود إسماعيل العامري</div>
+  <div class="footer-name en">Mohammed Daoud Ismail Al-Ameri</div>
+  <div class="footer-title ar">المؤسس والرئيس التنفيذي لمشروع ROBOT HOUSE</div>
+  <div class="footer-title en">Founder &amp; CEO of ROBOT HOUSE Project</div>
+  <div class="footer-patent ar">نيابةً عن فريق مشروع ROBOT HOUSE وأنا، أود أن أعرب عن خالص امتناننا لكل من خصص وقتاً للتعرف على مفهوم مساحة المعيشة المبتكر لدينا. يشرفنا ويشعرنا بالتواضع الدعم والاهتمام الذي تلقيناه حتى الآن، ونتطلع إلى تحقيق هذا المشروع. شكراً لكم على اهتمامكم.<br><br><strong>© ROBOT HOUSE — جميع الحقوق محفوظة — محمية ببراءات اختراع دولية</strong></div>
+  <div class="footer-patent en">On behalf of the ROBOT HOUSE project team and myself, I would like to express our sincere gratitude to everyone who took the time to learn about our innovative living space concept. We are honored and humbled by the support and interest we have received so far, and we look forward to realizing this project. Thank you for your interest and attention.<br><br><strong>© ROBOT HOUSE — All Rights Reserved — Protected by International Patents</strong></div>
+</footer>
+
+</div><!-- end page-wrap -->
+
+<script>
+(function(){
+  // Initialize language from document or default to 'ar'
+  let currentLang = document.documentElement.lang || 'ar';
+  function applyLang(lang){
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'en') ? 'ltr' : 'rtl';
+    const label = document.getElementById('lang-label');
+    if(label) label.textContent = (lang === 'en') ? 'English' : 'العربية';
+    try{ localStorage.setItem('rh_lang', lang); }catch(e){}
+  }
+  window.toggleLang = function(){
+    const next = (document.documentElement.lang === 'en') ? 'ar' : 'en';
+    applyLang(next);
+  };
+  try{
+    const saved = localStorage.getItem('rh_lang');
+    if(saved && (saved === 'en' || saved === 'ar')) currentLang = saved;
+  }catch(e){}
+  applyLang(currentLang);
+})();
+</script>
+
+
